@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Apple iPhone 13",
+        "url": "https://www.amazon.fr/Apple-iPhone-13-128-Go/dp/B09G94X7ST/ref=sr_1_1_sspa?keywords=iphone%2B13&qid=1678379913&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1",
+        "data": [
+            {
+                "price": 999,
+                "timestamp": "2022-03-10T14:01:23.000Z"
+            },
+            {
+                "price": 999,
+                "timestamp": "2022-03-10T14:01:23.000Z"
+            },
+            {
+                "price": 999,
+                "timestamp": "2022-03-10T14:01:23.000Z"
+            }
+        ]
+    },
+    {
+        "name": "Apple iPhone 14",
+        "url": "https://www.amazon.fr/Apple-iPhone-13-128-Go/dp/B09G94X7ST/ref=sr_1_1_sspa?keywords=iphone%2B13&qid=1678379913&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1",
+        "data": [
+            {
+                "price": 999,
+                "timestamp": "2022-03-10T14:01:23.000Z"
+            },
+            {
+                "price": 999,
+                "timestamp": "2022-03-10T14:01:23.000Z"
+            },
+            {
+                "price": 999,
+                "timestamp": "2022-03-10T14:01:23.000Z"
+            }
+        ]
+    },
+    {
+        "name": "        Lenovo IdeaPad 3 15ITL6 Ordinateur Portable 15.6'' FHD - (Intel Core i5-1135G7",
+        "url": "https://www.amazon.fr/15ITL6-I5-1135G7-512GB-15-6IN-NOOD/dp/B091CVM6W2?ref_=Oct_DLandingS_D_5a6dc67a_61",
+        "data": [
+            {
+                "price": 549,
+                "timestamp": "3/9/2023, 6:48:40 PM"
+            },
+            {
+                "price": 549,
+                "timestamp": "3/9/2023, 6:58:22 PM"
+            },
+            {
+                "price": 549,
+                "timestamp": "3/9/2023, 6:58:44 PM"
+            },
+            {
+                "price": 549,
+                "timestamp": "3/9/2023, 6:59:20 PM"
+            },
+            {
+                "price": 549,
+                "timestamp": "3/9/2023, 6:59:33 PM"
+            },
+            {
+                "price": 549,
+                "timestamp": "3/9/2023, 9:58:01 PM"
+            }
+        ]
+    }
+]
