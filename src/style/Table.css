@@ -1,0 +1,37 @@
+body {
+    background-color: #1f2c3a;
+}
+
+.tableContainer {
+    width: 50%;
+    margin: auto;
+}
+
+.tableContainer h1 {
+    color: white;
+}
+
+table {
+    background-color: white;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+  
+td, th {
+    
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+    
+}
+
+#keyBox {
+    background-color: #da6a5a;
+    color: white;
+    border: none;
+}
