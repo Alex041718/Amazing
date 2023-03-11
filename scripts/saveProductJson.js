@@ -2,21 +2,6 @@ const fs = require('fs');
 const getAmazonProduct = require('./getAmazonProduct');
 
 
-//const getAmazonProduct = require('./getAmazonProduct');
-
-
-// Lecture du fichier JSON
-//const rawData = fs.readFileSync('../data/Products.json');
-//const data = JSON.parse(rawData);
-
-
-
-//console.log(data);
-
-// Modification des données
-//data.products = 'bar';
-
-
 
 function getProduct(url){
     getAmazonProduct(url).then(res => saveProductJson(res));
@@ -27,7 +12,7 @@ function saveProductJson(product){
     // Product is one parameter.
     
     // Json data
-    const rawData = fs.readFileSync('../data/Products.json');
+    const rawData = fs.readFileSync('../data/dataProducts.json');
     const data = JSON.parse(rawData);   
 
     //booleen
@@ -64,7 +49,7 @@ function saveProductJson(product){
     }
 
     // Écriture des modifications dans le fichier JSON
-    fs.writeFileSync('../data/Products.json', JSON.stringify(data, null, 4));
+    fs.writeFileSync('../data/dataProducts.json', JSON.stringify(data, null, 4));
 
 
 }
