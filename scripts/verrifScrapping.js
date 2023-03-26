@@ -5,9 +5,15 @@ const url = 'https://www.amazon.fr/15ITL6-I5-1135G7-512GB-15-6IN-NOOD/dp/B091CVM
 
 async function getPrice(url) {
     try {
+      const options = {
+        url: url,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+        }
+      };
       
       const response = await new Promise((resolve, reject) => {
-        request(url, (error, response, html) => {
+        request(options, (error, response, html) => {
           if (error) reject(error);
           else resolve(response);
         });
