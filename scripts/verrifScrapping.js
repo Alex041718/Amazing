@@ -24,6 +24,7 @@ async function getPrice(url) {
         throw new Error('Failed to load page');
 
       }
+      console.log(response);
   
       const $ = cheerio.load(response.body);
   
