@@ -27,6 +27,7 @@ async function getPrice(url, userAgent) {
 
       }
   
+      console.log(response);
       const $ = cheerio.load(response.body);
   
       const price = $('span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay .a-offscreen').text();
