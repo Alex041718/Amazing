@@ -2,14 +2,16 @@ const request = require('request');
 const cheerio = require('cheerio');
 
 const url = 'https://www.amazon.fr/15ITL6-I5-1135G7-512GB-15-6IN-NOOD/dp/B091CVM6W2?ref_=Oct_DLandingS_D_5a6dc67a_61';
+const userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36';
 
-async function getPrice(url) {
+async function getPrice(url, userAgent) {
     try {
       const options = {
         url: url,
         headers: {
-          'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15'
-        }
+          'User-Agent': userAgent
+        },
+        strictSSL: true
       };
       
       const response = await new Promise((resolve, reject) => {
@@ -24,7 +26,6 @@ async function getPrice(url) {
         throw new Error('Failed to load page');
 
       }
-      console.log(response);
   
       const $ = cheerio.load(response.body);
   
@@ -44,4 +45,4 @@ async function getPrice(url) {
     }
   }
   
-  getPrice(url).then(res => console.log(res));
+  getPrice(url, userAgent).then(res => console.log(res));
