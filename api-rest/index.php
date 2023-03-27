@@ -2,13 +2,13 @@
 
 header("Content-Type: application/json");
 
-$person = array(
-    'name' => 'John Doe',
-    'age' => 30,
-    'email' => 'john.doe@example.com'
-);
+// Lire le contenu du fichier data.json
+$data = file_get_contents("../data/dataProducts.json");
 
-$json = json_encode($person);
+// Décoder le contenu en tant qu'objet ou tableau PHP
+$newData = json_decode($data);
 
-echo $json;
+// Renvoyer le contenu en tant que réponse JSON
+echo json_encode($newData);
+
 ?>
