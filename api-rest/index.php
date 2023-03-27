@@ -1,6 +1,7 @@
 <?php
 
 header("Content-Type: application/json");
+header("Access-Control-Allow-Origin: *");
 
 // Lire le contenu du fichier data.json
 $data = file_get_contents("../data/dataProducts.json");
