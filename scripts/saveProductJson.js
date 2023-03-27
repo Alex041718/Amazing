@@ -1,6 +1,6 @@
 const fs = require('fs');
 const getAmazonProduct = require('./getAmazonProduct');
-
+const path = require('path');
 
 
 function getProduct(url){
@@ -12,7 +12,8 @@ function saveProductJson(product){
     // Product is one parameter.
     
     // Json data
-    const rawData = fs.readFileSync('../data/dataProducts.json');
+    const filePathProducts = path.join(__dirname, '..', 'data', 'dataProducts.json');
+    const rawData = fs.readFileSync(filePathProducts);
     const data = JSON.parse(rawData);   
 
     //booleen
