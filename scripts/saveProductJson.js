@@ -17,15 +17,7 @@ function saveProductJson(product){
     const data = JSON.parse(rawData);   
 
     //booleen
-    let thereIsAlready;
-
-    data.forEach(element => {
-        if (element.name == product.name) {
-            thereIsAlready = true;
-        } else {
-            thereIsAlready = false;
-        }
-    });
+    
 
     if (data.find(p => p.name === product.name)) {
 
@@ -50,7 +42,7 @@ function saveProductJson(product){
     }
 
     // Écriture des modifications dans le fichier JSON
-    fs.writeFileSync('../data/dataProducts.json', JSON.stringify(data, null, 4));
+    fs.writeFileSync(filePathProducts, JSON.stringify(data, null, 4));
 
 
 }
