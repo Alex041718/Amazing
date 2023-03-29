@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const url = require('url');
 const querystring = require('querystring');
 const path = require('path');
+const cors = require('cors');
+
 
 const fs = require('fs');
 
@@ -12,6 +14,9 @@ const getPrice = require('./scripts/getAmazonProductByASIN');
 let app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+// Use the cors middleware to allow access from any origin
+app.use(cors());
 
 // Function to handle the root path
 app.get('/products/getProductByASIN', async function(req, res) {
