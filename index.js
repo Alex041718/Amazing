@@ -46,6 +46,6 @@ app.get('/products', async function(req, res) {
 
 
 
-let server = app.listen(8080, function() {
-    console.log('Server is listening on port 8080')
+let server = app.listen(80, function() {
+    console.log('Server is listening on port 80')
 });
