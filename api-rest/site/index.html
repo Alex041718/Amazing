@@ -7,10 +7,18 @@
     <body>
         <h1 id="title">My First Web Page</h1>
         
+        <div id="container">
 
+        <div id="boxAnnexe">
+            <h1>599€</h1>
+            <img id="pictureProcduct" src="../../data/picture/airpodsMAX.jpg">
+        </div>
 
+        
         <div id="boxChart">
         <canvas id="myChart"></canvas>
+        </div>
+        
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -20,7 +28,7 @@
             .then(response => response.json())
             .then(dataAPI => {
                 
-                console.log(dataAPI[0].data);
+                console.log(dataAPI[0]);
                 
                 const product = dataAPI[0];
                 const prices = [];
@@ -53,7 +61,7 @@
                     }]
                 },
                 options: {
-                    maintainAspectRatio: true,
+                    maintainAspectRatio: false,
                     responsive: true,
                     
     
