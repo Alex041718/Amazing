@@ -1,13 +1,15 @@
 
 function getTimeStamp(){
-    // return timesStamp in ISO 8601.
+    // return timesStamp since epoch.
 
-    const now = new Date();
+    const now = Date.now();
 
-    const localTimestamp = now.toLocaleString();
+    
 
-    return localTimestamp;
+    return now;
     
 }
+
+
 
 module.exports = getTimeStamp;
