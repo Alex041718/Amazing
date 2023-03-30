@@ -19,7 +19,9 @@ verrif avec node -v et npm -v
 
 sudo apt-get install git
 
-sudo git clone https://github.com/Alex041718/Amazing.git
+git clone https://github.com/Alex041718/Amazing.git
+
+npm i
 
 # Nginx
 
@@ -66,5 +68,20 @@ sudo systemctl restart nginx
 
 
 
+
+# install mp2
+
+npm install pm2@latest -g
+
+pm2 start index.js --name Amazing --watch
+
+
+pm2 ls
+
+pm2 monit
+
+pm2 plus
+
+# Crontab pour pushProduct.js
 
 
