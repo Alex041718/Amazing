@@ -23,7 +23,7 @@ async function getPrice(asin) {
                 var res = {
                     "name": root.querySelector('#centerCol #title_feature_div #titleSection #title #productTitle').text.trim(),
 
-                    "ASIN": asin,
+                    "asin": asin,
 
                     "price": parseFloat(root.querySelector('span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay .a-offscreen').text.trim().split('€')[0]),
                     
