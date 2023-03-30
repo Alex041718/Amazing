@@ -1,10 +1,10 @@
 const fs = require('fs');
-const getAmazonProduct = require('./getAmazonProduct');
+const getAmazonProduct = require('./getAmazonProductByASIN');
 const path = require('path');
 
 
-function getProduct(url){
-    getAmazonProduct(url).then(res => saveProductJson(res));
+function getProduct(asin){
+    getAmazonProduct(asin).then(res => saveProductJson(res));
 }
 
 function saveProductJson(product){
@@ -30,7 +30,7 @@ function saveProductJson(product){
 
         data.push({
             "name": product.name,
-            "url": product.url,
+            "asin": product.asin,
             "data": [
                 {
                     "price": product.price,

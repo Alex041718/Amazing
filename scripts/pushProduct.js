@@ -8,8 +8,8 @@ const data = JSON.parse(rawData);
 
 function fetchListSystem(){
 
-    data.forEach(url => {
-        saveProduct(url);
+    data.forEach(asin => {
+        saveProduct(asin);
     });
 }
 
