@@ -9,7 +9,7 @@ const cors = require('cors');
 const fs = require('fs');
 
 const getPrice = require('./scripts/getAmazonProductByASIN');
-const getData = require('./scripts/getDatabyASINorNot');
+const getData = require('./scripts/getDataByASINorNot');
 
 let app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
