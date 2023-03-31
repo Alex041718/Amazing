@@ -19,9 +19,9 @@ function saveProductJson(product){
     //booleen
     
 
-    if (data.find(p => p.name === product.name)) {
+    if (data.find(p => p.asin === product.asin)) {
 
-        data.find(p => p.name === product.name).data.push({
+        data.find(p => p.asin === product.asin).data.push({
             "price": product.price,
             "timestamp": product.timestamp
         })
