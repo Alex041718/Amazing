@@ -15,7 +15,7 @@ const data = JSON.parse(rawData);
 //const ASIN = 'B0935DN1BN' // connu
 const ASIN = 'B08N36XNTT' // pas connu
 
-async function getDatabyASINorNot(asin) {
+async function getDataByASINorNot(asin) {
     
     var jsonProduct = {};
     for (let i = 0; i < data.length; i++) {
@@ -43,6 +43,6 @@ async function getDatabyASINorNot(asin) {
 }
 
 
-getDatabyASINorNot(ASIN).then((response) => { console.log(response) });
+//getDatabyASINorNot(ASIN).then((response) => { console.log(response) });
 
-module.exports = getDatabyASINorNot;
+module.exports = getDataByASINorNot;
