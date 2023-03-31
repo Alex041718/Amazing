@@ -20,21 +20,21 @@ async function getPrice(asin) {
                     var root = parse(response.data);
 
 
-                var res = {
-                    "name": root.querySelector('#centerCol #title_feature_div #titleSection #title #productTitle').text.trim(),
+                    var res = {
+                        "name": root.querySelector('#centerCol #title_feature_div #titleSection #title #productTitle').text.trim(),
 
-                    "asin": asin,
+                        "asin": asin,
 
-                    "price": parseFloat(root.querySelector('span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay .a-offscreen').text.trim().split('€')[0]),
-                    
-                    "timestamp": getTimeStamp(),
-                }
+                        "price": parseFloat(root.querySelector('span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay .a-offscreen').text.trim().split('€')[0]),
 
-                resolve(res);
+                        "timestamp": getTimeStamp(),
+                    }
+
+                    resolve(res);
                 } catch (error) {
                     reject(error);
                 }
-                
+
             })
             .catch((error) => {
                 reject(error);

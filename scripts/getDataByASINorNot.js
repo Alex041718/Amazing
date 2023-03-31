@@ -12,7 +12,7 @@ const filePathProducts = path.join(__dirname, '..', 'data', 'dataProducts.json')
 const rawData = fs.readFileSync(filePathProducts);
 const data = JSON.parse(rawData);
 
-//const ASIN = 'B0935DN1BN' // connu
+//const ASIN = 'B07W6JFPT1' // connu
 const ASIN = 'B08N36XNTT' // pas connu
 
 async function getDataByASINorNot(asin) {
@@ -32,20 +32,22 @@ async function getDataByASINorNot(asin) {
         }
     }
 
+    return new Promise((resolve, reject) => {
+        return getAmazonProduct(asin)
+            .then((jsonProduct) => {
+                try {
+                    jsonProduct['alreadySaved'] = false;
+                    resolve(jsonProduct)
+                } catch (error) {
+                    reject(error)
+                }
 
-    return getAmazonProduct(asin).then((jsonProduct) => {
-        try {
-            jsonProduct['alreadySaved'] = false;
-            resolve(res)
-        } catch (error) {
-            reject(error)
-        }
-
+            })
+            .catch((error) => {
+                reject(error);
+            });
     })
-    .catch((error) => {
-        reject(error);
-    });
-}
+};
 
 
 //getDatabyASINorNot(ASIN).then((response) => { console.log(response) });
