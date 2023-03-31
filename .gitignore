@@ -6,8 +6,8 @@
 .pnp.js
 
 #data
-/data/dataProducts.json
-/data/listProducts.json
+data/dataProducts.json
+data/listProducts.json
 
 # testing
 /coverage
