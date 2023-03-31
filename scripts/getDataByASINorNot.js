@@ -10,32 +10,37 @@ const path = require('path');
 // Récupération des données du fichier dataProducts.json
 const filePathProducts = path.join(__dirname, '..', 'data', 'dataProducts.json');
 const rawData = fs.readFileSync(filePathProducts);
-const data = JSON.parse(rawData);   
+const data = JSON.parse(rawData);
 
 //const ASIN = 'B0935DN1BN' // connu
 const ASIN = 'B08N36XNTT' // pas connu
 
 async function getDataByASINorNot(asin) {
-    
+
     var jsonProduct = {};
     for (let i = 0; i < data.length; i++) {
         if (data[i].asin === asin) {
 
-                
-                jsonProduct = data[i];
-                // last timestamp and price
-                jsonProduct['timestamp'] = data[i].data[data[i].data.length -1].timestamp;
-                jsonProduct['price'] = data[i].data[data[i].data.length -1].price;
-                jsonProduct['alreadySaved'] = true;
-                return Promise.resolve(jsonProduct);
-            
+
+            jsonProduct = data[i];
+            // last timestamp and price
+            jsonProduct['timestamp'] = data[i].data[data[i].data.length - 1].timestamp;
+            jsonProduct['price'] = data[i].data[data[i].data.length - 1].price;
+            jsonProduct['alreadySaved'] = true;
+            return Promise.resolve(jsonProduct);
+
         }
     }
-    
+
 
     return getAmazonProduct(asin).then((jsonProduct) => {
-        jsonProduct['alreadySaved'] = false;
-        return jsonProduct;
+        try {
+            jsonProduct['alreadySaved'] = false;
+            resolve(res)
+        } catch (error) {
+            reject(error)
+        }
+
     })
     .catch((error) => {
         reject(error);

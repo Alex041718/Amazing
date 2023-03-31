@@ -21,7 +21,7 @@ app.use(cors());
 // Function to handle the root path
 app.get('/products/getProductByASIN', async function(req, res) {
 
-    // Access the provided 'page' and 'limt' query parameters
+   
 
     if (req.query.ASIN) {
         getPrice(req.query.ASIN).then((response) => {
@@ -38,7 +38,7 @@ app.get('/products/getProductByASIN', async function(req, res) {
 
 app.get('/products/getDataPage', async function(req, res) {
 
-    // Access the provided 'page' and 'limt' query parameters
+    
 
     if (req.query.ASIN) {
         getData(req.query.ASIN).then((response) => {
