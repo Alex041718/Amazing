@@ -1,3 +1,42 @@
 [
-    
+    {
+        "name": "Apple AirTag",
+        "asin": "B0935DN1BN",
+        "data": [
+            {
+                "price": 34,
+                "timestamp": 1680199744241
+            }
+        ]
+    },
+    {
+        "name": "Apple AirPods Max - Argent",
+        "asin": "B08Q29FZNF",
+        "data": [
+            {
+                "price": 639,
+                "timestamp": 1680199744463
+            }
+        ]
+    },
+    {
+        "name": "Apple iPhone 14 (128 Go) - Bleu",
+        "asin": "B0BDJHR5DD",
+        "data": [
+            {
+                "price": 895,
+                "timestamp": 1680199744659
+            }
+        ]
+    },
+    {
+        "name": "Logitech MX Keys Advanced Clavier sans Fil Rétroéclairé, Bluetooth, Saisie Tactile Réactive, Rétroéclairage, USB-C, PC/Mac/Portable Windows/Linux/IOS/Android, AZERTY Français - Noir",
+        "asin": "B07W6JFPT1",
+        "data": [
+            {
+                "price": 99,
+                "timestamp": 1680199745189
+            }
+        ]
+    }
 ]
