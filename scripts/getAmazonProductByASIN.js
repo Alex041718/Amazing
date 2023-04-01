@@ -25,6 +25,8 @@ async function getPrice(asin) {
 
                         "asin": asin,
 
+                        "image": root.querySelector('#landingImage').getAttribute('src'),
+
                         "price": parseFloat(root.querySelector('span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay .a-offscreen').text.trim().split('€')[0]),
 
                         "timestamp": getTimeStamp(),

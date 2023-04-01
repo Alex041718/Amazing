@@ -31,6 +31,7 @@ function saveProductJson(product){
         data.push({
             "name": product.name,
             "asin": product.asin,
+            "image": product.image,
             "data": [
                 {
                     "price": product.price,
