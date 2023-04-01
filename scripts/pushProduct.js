@@ -13,4 +13,6 @@ function fetchListSystem(){
     });
 }
 
+module.exports = fetchListSystem;
+
 fetchListSystem();

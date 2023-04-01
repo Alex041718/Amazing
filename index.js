@@ -10,6 +10,8 @@ const fs = require('fs');
 
 const getPrice = require('./scripts/getAmazonProductByASIN');
 const getData = require('./scripts/getDataByASINorNot');
+const addProduct = require('./scripts/addProductByASIN');
+//const pushProduct = require('./scripts/pushProduct');
 
 let app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -47,6 +49,21 @@ app.get('/products/getDataPage', async function(req, res) {
             res.status(404)
             res.send("Product not found");
         });
+    } else {
+        res.send("No ASIN provided");
+    }
+    
+});
+
+
+app.get('/products/addProduct', async function(req, res) {
+
+    
+
+    if (req.query.ASIN) {
+        addProduct(req.query.ASIN)
+        
+        res.send("Product added");
     } else {
         res.send("No ASIN provided");
     }
