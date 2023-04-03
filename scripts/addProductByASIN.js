@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const pushProduct = require('./pushProduct');
+//const pushProduct = require('./pushProduct');
 
 
 // Json data
