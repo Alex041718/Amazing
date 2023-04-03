@@ -3,7 +3,7 @@ const { parse } = require('node-html-parser');
 
 const getTimeStamp = require('./getTimeStamp');
 
-const ASIN = 'B09Y98HZW3'
+//const ASIN = 'B09Y98HZW3'
 
 
 async function getPrice(asin) {
@@ -50,8 +50,8 @@ async function getPrice(asin) {
 module.exports = getPrice;
 
 
-(async () => {
+/*(async () => {
     console.log(await getPrice(ASIN));
-})();
+})();*
 
 
