@@ -52,6 +52,6 @@ module.exports = getPrice;
 
 /*(async () => {
     console.log(await getPrice(ASIN));
-})();*
+})();*>*/
 
 
