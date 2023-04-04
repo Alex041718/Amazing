@@ -85,3 +85,12 @@ pm2 plus
 # Crontab pour pushProduct.js
 
 
+# Desinstallation de nginx
+
+sudo systemctl stop nginx
+sudo systemctl disable nginx
+sudo apt-get remove nginx
+sudo rm -rf /etc/nginx/
+sudo rm -rf /var/log/nginx/
+sudo rm -rf /var/cache/nginx/
+sudo reboot
