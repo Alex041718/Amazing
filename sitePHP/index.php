@@ -46,6 +46,16 @@ if ($dataAPI['alreadySaved'] == true) {
 print_r($_GET);
 
 
+if($dataAPI['alreadySaved'] == true){
+    $newArrayDate = [];
+
+    foreach ($dates as $date) {
+        array_push($newArrayDate, date("d-m-Y H:i:s", substr($date, 0, 10)));
+    }
+};
+
+
+
 
 
 // La variable $dataAPI contient maintenant les données JSON récupérées depuis l'API pour l'ASIN spécifié.
@@ -82,8 +92,17 @@ print_r($_GET);
         </div>
 
         
-        <div id="boxChart">
-        <canvas id="myChart"></canvas>
+        <div id="boxChart" style="display: flex;">
+
+<?php
+
+if($dataAPI['alreadySaved'] == false){echo "<form action='addProduct.php?' method='GET'><input type='text' name='ASIN' value='{$asin}' style='display: none;' ></input><button id='buttonAddProduct' type='submit'>Add product <b>+</b> </button></form>";}
+else{echo "<canvas id='myChart'></canvas>";}
+
+
+?>
+
+        
         </div>
         
         </div>
@@ -94,18 +113,18 @@ print_r($_GET);
         <script>
             
 
-                if (<?php echo $dataAPI['alreadySaved'] ?> == 1){
+                if (<?php echo "'{$dataAPI['alreadySaved']}'" ?> == 1){
                     const ctx = document.getElementById('myChart').getContext('2d');
-        
+                    
                     const chart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: <?php echo json_encode($dates); ?>,//['January', 'February', 'March', 'April', 'May', 'June', 'July']
+                        labels: <?php if($dataAPI['alreadySaved']){ echo json_encode($newArrayDate);} else {echo "[]";} ?>,//['January', 'February', 'March', 'April', 'May', 'June', 'July']
                         datasets: [{
-                        label: product.name + ' Price',
+                        label: "<?php echo $dataAPI['name'] ?>" + ' Price',
                         backgroundColor: 'rgb(255, 99, 132)',
                         borderColor: 'rgb(255, 99, 132)',
-                        data: <?php echo json_encode($prices); ?>,//[0, 10, 5, 2, 20, 65, 45]
+                        data: <?php if($dataAPI['alreadySaved']){ echo json_encode($prices);} else {echo "[]";}  ?>,//[0, 10, 5, 2, 20, 65, 45]
                         }]
                     },
                     options: {
