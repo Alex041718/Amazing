@@ -29,7 +29,7 @@ h1[id="title"] {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
+        margin-bottom: 200px;
         
 }
 
@@ -131,6 +131,18 @@ h1[id="title"] {
         cursor: pointer;
 }
 
+#buttonAddProduct {
+        border: none;
+        color: white;
+        background-color: #FD6083;
+        border-radius: 50px;
+        padding: 10px 50px;
+        cursor: pointer;
+        margin: auto;
+        font-size: 20px;
+        font-weight: 500;
+}
+
 
 
 @media screen and (max-width: 640px) {
@@ -140,6 +152,7 @@ h1[id="title"] {
                 align-items: center;
                 margin: 20px;
                 margin-bottom: 100px;
+                
         }
 
         #boxChart {
