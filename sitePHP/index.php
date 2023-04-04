@@ -43,7 +43,7 @@ if ($dataAPI['alreadySaved'] == true) {
 
 //echo json_encode($prices);
 //print_r($dates);
-print_r($_GET);
+print_r($dataAPI);
 
 
 if($dataAPI['alreadySaved'] == true){
@@ -96,7 +96,7 @@ if($dataAPI['alreadySaved'] == true){
 
 <?php
 
-if($dataAPI['alreadySaved'] == false){echo "<form action='addProduct.php?' method='GET'><input type='text' name='ASIN' value='{$asin}' style='display: none;' ></input><button id='buttonAddProduct' type='submit'>Add product <b>+</b> </button></form>";}
+if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?' method='GET'><input type='text' name='ASIN' value='{$asin}' style='display: none;' ></input><button id='buttonAddProduct' type='submit'>Add product <b>+</b> </button></form>";}
 else{echo "<canvas id='myChart'></canvas>";}
 
 
@@ -121,7 +121,7 @@ else{echo "<canvas id='myChart'></canvas>";}
                     data: {
                         labels: <?php if($dataAPI['alreadySaved']){ echo json_encode($newArrayDate);} else {echo "[]";} ?>,//['January', 'February', 'March', 'April', 'May', 'June', 'July']
                         datasets: [{
-                        label: "<?php echo $dataAPI['name'] ?>" + ' Price',
+                        label: "<?php echo str_replace('"', '\"', $dataAPI['name']); ?>" + ' Price',
                         backgroundColor: 'rgb(255, 99, 132)',
                         borderColor: 'rgb(255, 99, 132)',
                         data: <?php if($dataAPI['alreadySaved']){ echo json_encode($prices);} else {echo "[]";}  ?>,//[0, 10, 5, 2, 20, 65, 45]
