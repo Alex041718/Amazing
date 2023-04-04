@@ -107,6 +107,62 @@
             {
                 "price": 34,
                 "timestamp": 1680535218879
+            },
+            {
+                "price": 34,
+                "timestamp": 1680537605756
+            },
+            {
+                "price": 34,
+                "timestamp": 1680541204030
+            },
+            {
+                "price": 34,
+                "timestamp": 1680548404676
+            },
+            {
+                "price": 34,
+                "timestamp": 1680552004045
+            },
+            {
+                "price": 34,
+                "timestamp": 1680559203809
+            },
+            {
+                "price": 34,
+                "timestamp": 1680566404122
+            },
+            {
+                "price": 34,
+                "timestamp": 1680573603725
+            },
+            {
+                "price": 34,
+                "timestamp": 1680577203782
+            },
+            {
+                "price": 34,
+                "timestamp": 1680580803750
+            },
+            {
+                "price": 34,
+                "timestamp": 1680588004906
+            },
+            {
+                "price": 34,
+                "timestamp": 1680591605019
+            },
+            {
+                "price": 34,
+                "timestamp": 1680595204295
+            },
+            {
+                "price": 34,
+                "timestamp": 1680598804268
+            },
+            {
+                "price": 34,
+                "timestamp": 1680606004483
             }
         ]
     },
@@ -218,6 +274,42 @@
             {
                 "price": 919,
                 "timestamp": 1680535218951
+            },
+            {
+                "price": 919,
+                "timestamp": 1680537604973
+            },
+            {
+                "price": 919,
+                "timestamp": 1680544804479
+            },
+            {
+                "price": 919,
+                "timestamp": 1680552004460
+            },
+            {
+                "price": 919,
+                "timestamp": 1680559204224
+            },
+            {
+                "price": 919,
+                "timestamp": 1680577203971
+            },
+            {
+                "price": 899,
+                "timestamp": 1680588005289
+            },
+            {
+                "price": 899,
+                "timestamp": 1680591605191
+            },
+            {
+                "price": 899,
+                "timestamp": 1680595204649
+            },
+            {
+                "price": 899,
+                "timestamp": 1680598804664
             }
         ]
     },
@@ -329,6 +421,50 @@
             {
                 "price": 629,
                 "timestamp": 1680535218912
+            },
+            {
+                "price": 629,
+                "timestamp": 1680537605145
+            },
+            {
+                "price": 629,
+                "timestamp": 1680544804264
+            },
+            {
+                "price": 629,
+                "timestamp": 1680548404887
+            },
+            {
+                "price": 629,
+                "timestamp": 1680555604910
+            },
+            {
+                "price": 629,
+                "timestamp": 1680559204390
+            },
+            {
+                "price": 689,
+                "timestamp": 1680577204432
+            },
+            {
+                "price": 689,
+                "timestamp": 1680584403948
+            },
+            {
+                "price": 689,
+                "timestamp": 1680588005151
+            },
+            {
+                "price": 689,
+                "timestamp": 1680591604544
+            },
+            {
+                "price": 689,
+                "timestamp": 1680595204931
+            },
+            {
+                "price": 679,
+                "timestamp": 1680606004753
             }
         ]
     },
@@ -432,6 +568,149 @@
             {
                 "price": 99,
                 "timestamp": 1680529421619
+            }
+        ]
+    },
+    {
+        "name": "KOORUI Écran PC 24 Pouces Full HD (1920 x 1080), VA, 75Hz, 5ms, Mode Faible lumière Bleue, Angle de Vision de 178°, VGA et HDMI, Noir",
+        "asin": "B09G6TX7L5",
+        "image": "https://m.media-amazon.com/images/I/71TOE0w7DzL.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "data": [
+            {
+                "price": 130,
+                "timestamp": 1680537605460
+            },
+            {
+                "price": 130,
+                "timestamp": 1680552004281
+            },
+            {
+                "price": 130,
+                "timestamp": 1680566404286
+            },
+            {
+                "price": 130,
+                "timestamp": 1680570004528
+            }
+        ]
+    },
+    {
+        "name": "Echo Dot (3ème génération), Enceinte connectée avec Alexa, Tissu anthracite",
+        "asin": "B07PHPXHQS",
+        "image": "https://m.media-amazon.com/images/I/61ab8NxB1JS._AC_SY300_SX300_.jpg",
+        "data": [
+            {
+                "price": 24,
+                "timestamp": 1680552004709
+            }
+        ]
+    },
+    {
+        "name": "Dell P2421D - Écran LED - 24\" (24\" visualisable) - 2560 x 1440 QHD - IPS - 300 CD/m² - 1000:1-5 ms - HDMI, DisplayPort - avec Garantie de 3 Ans Advanced Exchange Basic Warranty Noir",
+        "asin": "B085XDDLLX",
+        "image": "https://m.media-amazon.com/images/I/61lMVp5VJ1S.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "data": [
+            {
+                "price": 336,
+                "timestamp": 1680570004196
+            },
+            {
+                "price": 346,
+                "timestamp": 1680577204946
+            },
+            {
+                "price": 350,
+                "timestamp": 1680588005490
+            },
+            {
+                "price": 343,
+                "timestamp": 1680595205076
+            },
+            {
+                "price": 346,
+                "timestamp": 1680606004896
+            }
+        ]
+    },
+    {
+        "name": "Philips Domestic Appliances CSA260/91 Senseo Maestro Machine à Café Dosettes avec Réservoir d'Eau de 1,2 Litre, Sélection l'Intensité du et Fonction Mémo, Produit Vert, Couleur : Rouge",
+        "asin": "B0BFJGRRQH",
+        "image": "https://m.media-amazon.com/images/I/61y5+9kRx5L._AC_SY300_SX300_.jpg",
+        "data": [
+            {
+                "price": 99,
+                "timestamp": 1680570004744
+            },
+            {
+                "price": 99,
+                "timestamp": 1680577204138
+            },
+            {
+                "price": 99,
+                "timestamp": 1680580803958
+            },
+            {
+                "price": 99,
+                "timestamp": 1680584404322
+            },
+            {
+                "price": 99,
+                "timestamp": 1680588004774
+            },
+            {
+                "price": 99,
+                "timestamp": 1680591604767
+            },
+            {
+                "price": 99,
+                "timestamp": 1680602404192
+            },
+            {
+                "price": 99,
+                "timestamp": 1680606004331
+            }
+        ]
+    },
+    {
+        "name": "Apple Chargeur MagSafe",
+        "asin": "B08L5R6ZHP",
+        "image": "https://m.media-amazon.com/images/I/91Rh8F1g3kL.__AC_SY445_SX342_QL70_ML2_.jpg",
+        "data": [
+            {
+                "price": 45,
+                "timestamp": 1680577204690
+            },
+            {
+                "price": 45,
+                "timestamp": 1680580804196
+            },
+            {
+                "price": 45,
+                "timestamp": 1680584404478
+            },
+            {
+                "price": 45,
+                "timestamp": 1680588004588
+            },
+            {
+                "price": 45,
+                "timestamp": 1680591604182
+            },
+            {
+                "price": 45,
+                "timestamp": 1680595204483
+            },
+            {
+                "price": 45,
+                "timestamp": 1680598804462
+            },
+            {
+                "price": 45,
+                "timestamp": 1680602403937
+            },
+            {
+                "price": 45,
+                "timestamp": 1680606004152
             }
         ]
     }
