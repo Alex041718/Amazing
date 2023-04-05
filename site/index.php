@@ -96,7 +96,7 @@ if($dataAPI['alreadySaved'] == true){
 
 <?php
 
-if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?' method='POST'><input type='text' name='ASIN' value='{$asin}' style='display: none;' ></input><button id='buttonAddProduct' type='submit'>Add product <b>+</b> </button></form>";}
+if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?' id='formAddProduct' method='POST'><input type='text' name='ASIN' value='{$asin}' style='display: none;' ></input><button id='buttonAddProduct' type='submit'>Add product <b>+</b> </button></form>";}
 else{echo "<canvas id='myChart'></canvas>";}
 
 
