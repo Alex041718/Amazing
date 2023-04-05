@@ -3,7 +3,7 @@
 
 
 //$asin = "pute";
-$asin = $_GET['ASIN'];
+$asin = $_POST['ASIN'];
 // Construire l'URL de la requête en utilisant la valeur de la constante ASIN
 $url = "http://51.38.35.91:3000/products/addProduct?ASIN={$asin}";
 
