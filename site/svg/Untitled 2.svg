@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 300 252" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1" vectornator:layerName="Layer 1">
+<g opacity="1">
+<path d="M83.4569 123.792C119.063 110.531 140.386 136.539 140.386 158.63C140.386 180.722 122.204 198.63 99.7755 198.63C80.4855 198.63 51.2297 176.576 64.0237 142.867" fill="none" opacity="0" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" vectornator:layerName="Curve"/>
+<path d="M83.1471 123.639C88.3514 121.184 94.1853 119.809 100.347 119.809C122.288 119.809 140.075 137.247 140.075 158.758C140.075 180.269 122.288 197.707 100.347 197.707C78.4056 197.707 60.6188 180.269 60.6188 158.758C60.6188 153.118 61.8415 147.758 64.0412 142.919" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+<path d="M68.344 134.869C70.1788 132.255 71.7015 130.619 75.309 128.046" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" vectornator:layerName="Curve"/>
+<g opacity="1">
+<path d="M92.0954 149.678L111.606 169.206" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+<path d="M91.9054 168.992L109.662 149.722" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+</g>
+<path d="M111.517 52.499C111.517 40.0069 137.839 29.8801 170.308 29.8801C202.778 29.8801 229.1 40.0069 229.1 52.499C229.1 64.991 202.778 75.1178 170.308 75.1178C137.839 75.1178 111.517 64.991 111.517 52.499Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="6"/>
+<path d="M151.659 159.183C161.522 160.818 166.997 160.703 176.944 160.447C186.605 160.198 203.009 158.413 212.889 154.298C219.797 151.421 227.725 147.772 228.973 141.262" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" vectornator:layerName="Curve"/>
+<path d="M143.926 130.813C152.606 133.027 177.188 135.725 200.494 130.585C211.701 128.114 225.233 121.422 228.837 113.704" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+<path d="M110.214 82.285C111.077 108.238 217.122 112.032 228.887 83.9988" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" vectornator:layerName="Curve"/>
+<path d="M229.067 126.853L229.057 53.8043" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+<path d="M110.265 72.1348L110.307 108.004" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+<g opacity="1">
+<path d="M194.791 87.6464L198.397 87.1615L201.643 86.3677" fill="none" opacity="1" stroke="#fd6083" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+<path d="M209.898 83.8916L213.829 82.4934L216.667 81.1646" fill="none" opacity="1" stroke="#fd6083" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+</g>
+<g opacity="1">
+<path d="M195.578 116.273L199.184 115.788L202.43 114.994" fill="none" opacity="1" stroke="#fd6083" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+<path d="M210.685 112.518L214.615 111.12L217.454 109.791" fill="none" opacity="1" stroke="#fd6083" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+</g>
+<g opacity="1">
+<path d="M195.531 145.573L199.137 145.088L202.383 144.294" fill="none" opacity="1" stroke="#fd6083" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+<path d="M210.639 141.818L214.569 140.419L217.408 139.091" fill="none" opacity="1" stroke="#fd6083" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+</g>
+</g>
+</g>
+</svg>
