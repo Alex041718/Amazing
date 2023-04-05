@@ -12,3 +12,19 @@ charles proxy (crack)
 
 
 since epoch
+
+
+# 1
+
+https://www.amazon.fr/sspa/click?ie=UTF8&spc=MTo1OTM2NzAwMDA0ODA2NjE6MTY4MDY4NTk5ODpzcF9hdGY6MjAxMjU3MTU2Mjk0OTg6OjA6Og&url=%2FKOORUI-%25C3%2589cran-Incurv%25C3%25A9-R%25C3%25A9solution-linclinaison%2Fdp%2FB0BB75D4ZD%2Fref%3Dsr_1_3_sspa%3F__mk_fr_FR%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26crid%3D37P8WVM9AAKG%26keywords%3Decran%26qid%3D1680685998%26sprefix%3Dec%252Caps%252C378%26sr%3D8-3-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+
+%2FKOORUI-%25C3%2589cran-Incurv%25C3%25A9-R%25C3%25A9solution-linclinaison%2Fdp%2FB0BB75D4ZD%2Fref%3Dsr_1_3_sspa%3F__mk_fr_FR%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26crid%3D37P8WVM9AAKG%26keywords%3Decran%26qid%3D1680685998%26sprefix%3Dec%252Caps%252C378%26sr%3D8-3-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+
+/KOORUI-%C3%89cran-Incurv%C3%A9-R%C3%A9solution-linclinaison/dp/B0BB75D4ZD/ref=sr_1_3_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=37P8WVM9AAKG&keywords=ecran&qid=1680685998&sprefix=ec%2Caps%2C378&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+
+# 2
+
+https://www.amazon.fr/sspa/click?ie=UTF8&spc=MTo1OTM2NzAwMDA0ODA2NjE6MTY4MDY4NTk5ODpzcF9hdGY6MjAxMzE2MjcwOTY1OTg6OjA6Og&url=%2FCRUA-Moniteur-Frameless-dordinateur-DisplayPort%2Fdp%2FB0BKZXHL6N%2Fref%3Dsr_1_2_sspa%3F__mk_fr_FR%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26crid%3D37P8WVM9AAKG%26keywords%3Decran%26qid%3D1680685998%26sprefix%3Dec%252Caps%252C378%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+
+
+/CRUA-Moniteur-Frameless-dordinateur-DisplayPort/dp/B0BKZXHL6N/ref=sr_1_2_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=37P8WVM9AAKG&keywords=ecran&qid=1680685998&sprefix=ec%2Caps%2C378&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
