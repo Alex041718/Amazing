@@ -78,14 +78,16 @@ if($dataAPI['alreadySaved'] == true){
         <script>
 const titleElement = document.querySelector('#title'); // sélectionne l'élément HTML contenant le titre du produit
 const limit = 40; // définit la limite de caractères souhaitée
+const truncatedText = titleElement.textContent.slice(0, limit) + '...';
+const tesxt = '<?php echo $dataAPI['name'] ?>';
+titleElement.textContent = truncatedText; // affiche le texte tronqué
 
 titleElement.addEventListener('click', function() {
   if (titleElement.textContent.length > limit) {
-    const truncatedText = titleElement.textContent.slice(0, limit) + '...'; // tronque le texte à la limite souhaitée et ajoute des points de suspension
-    titleElement.textContent = truncatedText; // affiche le texte tronqué
+    
+    alert("ssfsef")
   } else {
-    titleElement.textContent = '<?php echo $dataAPI['name'] ?>';
-    // le texte est déjà court, ne rien faire
+    alert("aaaaa")
   }
 });
 
