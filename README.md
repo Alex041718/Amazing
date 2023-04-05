@@ -10,7 +10,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 
-sudo nvm install --
+nvm install 18.15.0
 
 verrif avec node -v et npm -v
 
@@ -20,7 +20,7 @@ verrif avec node -v et npm -v
 sudo apt-get install git
 
 git clone https://github.com/Alex041718/Amazing.git
-
+cd Amazing/
 npm i
 
 # Nginx
@@ -28,7 +28,7 @@ npm i
 sudo apt install nginx
 
 sudo nano /etc/nginx/sites-available/api-rest-site.conf
-
+bah dcp je l'ai mis dans /home/debian/Amazing/api-rest-site.conf
 
 ```
 server {
@@ -56,6 +56,8 @@ Créez un lien symbolique dans le répertoire /etc/nginx/sites-enabled/ pour act
 
 sudo ln -s /etc/nginx/sites-available/api-rest-site.conf /etc/nginx/sites-enabled/
 
+donc nouvelle commande :
+sudo ln -s /home/debian/Amazing/api-rest-site.conf /etc/nginx/sites-enabled/
 Verrif config nginx :
 
 sudo nginx -t
@@ -83,14 +85,29 @@ pm2 monit
 pm2 plus
 
 # Crontab pour pushProduct.js
+0 * * * * /home/debian/.nvm/versions/node/v18.15.0/bin/node /home/debian/Amazing/scripts/pushProduct.js
+
+# Apache2
+
+sudo apt install apache2
+
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+    DocumentRoot /home/debian/Amazing/site/
+```
+
+````
+<Directory /home/debian/Amazing/site/>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Require all granted
+    AddType application/x-httpd-php .php
+    AddHandler php-script .php
+</Directory>
+````
+sudo systemctl restart apache2
 
 
-# Desinstallation de nginx
+# php local 
 
-sudo systemctl stop nginx
-sudo systemctl disable nginx
-sudo apt-get remove nginx
-sudo rm -rf /etc/nginx/
-sudo rm -rf /var/log/nginx/
-sudo rm -rf /var/cache/nginx/
-sudo reboot
+php -S localhost:8000

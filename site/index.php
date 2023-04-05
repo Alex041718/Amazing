@@ -3,7 +3,7 @@
 // Définir la constante ASIN avec une valeur
 
 //$asin = "B08Q29FZNF";
-$asin = $_GET['ASIN'];
+$asin = $_GET['asin'];
 // Construire l'URL de la requête en utilisant la valeur de la constante ASIN
 $url = "http://51.38.35.91:3000/products/getDataPage?ASIN={$asin}";
 
