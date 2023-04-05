@@ -73,13 +73,13 @@ if($dataAPI['alreadySaved'] == true){
     <body>
         
 
-        <h1 id="title"><?php echo str_replace('"', '\"', $dataAPI['name']); ?></h1>
+        <h1 id="title"><?php echo str_replace("'", "\'", str_replace('"', '\"', $dataAPI['name'])); ?></h1>
 
         <script>
 const titleElement = document.querySelector('#title'); // sélectionne l'élément HTML contenant le titre du produit
 const limit = 40; // définit la limite de caractères souhaitée
 const reduceTitle = titleElement.textContent.slice(0, limit) + '...';
-const longTitle = '<?php echo str_replace('"', '\"', $dataAPI['name']); ?>';
+const longTitle = '<?php echo str_replace("'", "\'", str_replace('"', '\"', $dataAPI['name'])); ?>';
 titleElement.textContent = reduceTitle; // affiche le texte tronqué
 
 titleElement.addEventListener('click', function() {
