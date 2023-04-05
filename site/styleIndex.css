@@ -14,7 +14,7 @@ h1[id="title"] {
         font-style: normal;
         
         font-size: 40px;
-        line-height: 47px;
+        
         /* identical to box height */
 
         text-align: center;
@@ -219,5 +219,20 @@ h1[id="title"] {
                 width: 75%;
                 border-radius: 15px;
                 border: 2px solid #666666;
+        }
+
+        h1[id="title"] {
+                font-family: 'Roboto-Bold';
+                font-style: normal;
+                
+                font-size: 20px;
+                
+                /* identical to box height */
+        
+                text-align: center;
+                margin: 60px;
+                
+        
+                color: #666666;
         }
 }

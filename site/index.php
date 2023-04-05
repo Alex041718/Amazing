@@ -43,7 +43,7 @@ if ($dataAPI['alreadySaved'] == true) {
 
 //echo json_encode($prices);
 //print_r($dates);
-print_r($dataAPI);
+//print_r($dataAPI);
 
 
 if($dataAPI['alreadySaved'] == true){
@@ -65,7 +65,7 @@ if($dataAPI['alreadySaved'] == true){
 
 <html>
     <head>
-        <title><?php echo $dataAPI['name'] ?></title>
+        <title>Amazing | <?php echo $dataAPI['name'] ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styleIndex.css">
         <meta charset="utf-8">
@@ -74,6 +74,22 @@ if($dataAPI['alreadySaved'] == true){
         
 
         <h1 id="title"><?php echo $dataAPI['name'] ?></h1>
+
+        <script>
+const titleElement = document.querySelector('#title'); // sélectionne l'élément HTML contenant le titre du produit
+const limit = 40; // définit la limite de caractères souhaitée
+
+titleElement.addEventListener('click', function() {
+  if (titleElement.textContent.length > limit) {
+    const truncatedText = titleElement.textContent.slice(0, limit) + '...'; // tronque le texte à la limite souhaitée et ajoute des points de suspension
+    titleElement.textContent = truncatedText; // affiche le texte tronqué
+  } else {
+    titleElement.textContent = '<?php echo $dataAPI['name'] ?>';
+    // le texte est déjà court, ne rien faire
+  }
+});
+
+        </script>
         
         <div id="container">
 
@@ -96,7 +112,12 @@ if($dataAPI['alreadySaved'] == true){
 
 <?php
 
-if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?' id='formAddProduct' method='POST'><input type='text' name='ASIN' value='{$asin}' style='display: none;' ></input><button id='buttonAddProduct' type='submit'>Add product <b>+</b> </button></form>";}
+if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?' id='formAddProduct' method='POST'>
+    <img id='svgNoData' src='svg/svgNoData.svg'>
+    <input type='text' name='ASIN' value='{$asin}' style='display: none;' >
+    </input>
+    <button id='buttonAddProduct' type='submit'>Add product <b>+</b> </button>
+    </form>";}
 else{echo "<canvas id='myChart'></canvas>";}
 
 

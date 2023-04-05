@@ -28,3 +28,19 @@ https://www.amazon.fr/sspa/click?ie=UTF8&spc=MTo1OTM2NzAwMDA0ODA2NjE6MTY4MDY4NTk
 
 
 /CRUA-Moniteur-Frameless-dordinateur-DisplayPort/dp/B0BKZXHL6N/ref=sr_1_2_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=37P8WVM9AAKG&keywords=ecran&qid=1680685998&sprefix=ec%2Caps%2C378&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+
+
+
+
+
+
+Réduire le titre de facon générale avec la possibilité de le voir en entier en cliquant dessus
+
+Après l'ajout d'un product, rediriger vers la page précedente.
+gérer l'état ou le produit est enregistrer dans listProducts.json mais pas dans dataProducts.json
+pour afficher une 3 ème état à la place du graphe.
+
+Gérer le setPriceAlert :
+    API : getDataPage => transmettre le prix de l'alerte, 0  par défault
+    API : setPriceAlert => modifier le prix de l'alerte
+    
