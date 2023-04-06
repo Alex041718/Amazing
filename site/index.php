@@ -147,7 +147,7 @@ else{echo "<canvas id='myChart'></canvas>";}
                     data: {
                         labels: <?php if($dataAPI['alreadySaved']){ echo json_encode($newArrayDate);} else {echo "[]";} ?>,//['January', 'February', 'March', 'April', 'May', 'June', 'July']
                         datasets: [{
-                        label: "<?php echo str_replace('"', '\"', $dataAPI['name']); ?>" + ' Price',
+                        label: reduceTitle + ' Price',
                         backgroundColor: 'rgb(255, 99, 132)',
                         borderColor: 'rgb(255, 99, 132)',
                         data: <?php if($dataAPI['alreadySaved']){ echo json_encode($prices);} else {echo "[]";}  ?>,//[0, 10, 5, 2, 20, 65, 45]
