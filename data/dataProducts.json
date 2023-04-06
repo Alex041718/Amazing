@@ -223,6 +223,70 @@
             {
                 "price": 34,
                 "timestamp": 1680728404263
+            },
+            {
+                "price": 34,
+                "timestamp": 1680735604836
+            },
+            {
+                "price": 34,
+                "timestamp": 1680739204801
+            },
+            {
+                "price": 34,
+                "timestamp": 1680742804542
+            },
+            {
+                "price": 34,
+                "timestamp": 1680746403977
+            },
+            {
+                "price": 34,
+                "timestamp": 1680750004248
+            },
+            {
+                "price": 34,
+                "timestamp": 1680753604031
+            },
+            {
+                "price": 34,
+                "timestamp": 1680757204292
+            },
+            {
+                "price": 34,
+                "timestamp": 1680760804086
+            },
+            {
+                "price": 34,
+                "timestamp": 1680764404290
+            },
+            {
+                "price": 34,
+                "timestamp": 1680768004232
+            },
+            {
+                "price": 34,
+                "timestamp": 1680771604529
+            },
+            {
+                "price": 34,
+                "timestamp": 1680775204636
+            },
+            {
+                "price": 34,
+                "timestamp": 1680778804814
+            },
+            {
+                "price": 34,
+                "timestamp": 1680782404677
+            },
+            {
+                "price": 34,
+                "timestamp": 1680786004479
+            },
+            {
+                "price": 34,
+                "timestamp": 1680789604373
             }
         ]
     },
@@ -410,6 +474,66 @@
             {
                 "price": 895,
                 "timestamp": 1680717605300
+            },
+            {
+                "price": 895,
+                "timestamp": 1680735605267
+            },
+            {
+                "price": 895,
+                "timestamp": 1680739205305
+            },
+            {
+                "price": 895,
+                "timestamp": 1680742803991
+            },
+            {
+                "price": 895,
+                "timestamp": 1680746404390
+            },
+            {
+                "price": 895,
+                "timestamp": 1680750004576
+            },
+            {
+                "price": 895,
+                "timestamp": 1680753604860
+            },
+            {
+                "price": 895,
+                "timestamp": 1680757205491
+            },
+            {
+                "price": 895,
+                "timestamp": 1680760803934
+            },
+            {
+                "price": 895,
+                "timestamp": 1680764404597
+            },
+            {
+                "price": 895,
+                "timestamp": 1680768004443
+            },
+            {
+                "price": 895,
+                "timestamp": 1680775205133
+            },
+            {
+                "price": 895,
+                "timestamp": 1680778804138
+            },
+            {
+                "price": 895,
+                "timestamp": 1680782404547
+            },
+            {
+                "price": 895,
+                "timestamp": 1680786004127
+            },
+            {
+                "price": 895,
+                "timestamp": 1680789604130
             }
         ]
     },
@@ -684,6 +808,34 @@
             {
                 "price": 99,
                 "timestamp": 1680714005313
+            },
+            {
+                "price": 99,
+                "timestamp": 1680735605756
+            },
+            {
+                "price": 99,
+                "timestamp": 1680739206162
+            },
+            {
+                "price": 99,
+                "timestamp": 1680742805185
+            },
+            {
+                "price": 99,
+                "timestamp": 1680746405136
+            },
+            {
+                "price": 99,
+                "timestamp": 1680750005293
+            },
+            {
+                "price": 99,
+                "timestamp": 1680753605521
+            },
+            {
+                "price": 99,
+                "timestamp": 1680757205327
             }
         ]
     },
@@ -731,6 +883,46 @@
             {
                 "price": 130,
                 "timestamp": 1680717604968
+            },
+            {
+                "price": 130,
+                "timestamp": 1680735605147
+            },
+            {
+                "price": 130,
+                "timestamp": 1680739205719
+            },
+            {
+                "price": 130,
+                "timestamp": 1680742805081
+            },
+            {
+                "price": 106,
+                "timestamp": 1680746404741
+            },
+            {
+                "price": 106,
+                "timestamp": 1680750004987
+            },
+            {
+                "price": 116,
+                "timestamp": 1680753605327
+            },
+            {
+                "price": 116,
+                "timestamp": 1680757204646
+            },
+            {
+                "price": 116,
+                "timestamp": 1680760804742
+            },
+            {
+                "price": 109,
+                "timestamp": 1680768005253
+            },
+            {
+                "price": 109,
+                "timestamp": 1680778805144
             }
         ]
     },
@@ -746,6 +938,34 @@
             {
                 "price": 24,
                 "timestamp": 1680703205376
+            },
+            {
+                "price": 24,
+                "timestamp": 1680735605525
+            },
+            {
+                "price": 24,
+                "timestamp": 1680739206023
+            },
+            {
+                "price": 24,
+                "timestamp": 1680742804828
+            },
+            {
+                "price": 24,
+                "timestamp": 1680746404948
+            },
+            {
+                "price": 24,
+                "timestamp": 1680750005426
+            },
+            {
+                "price": 24,
+                "timestamp": 1680753605209
+            },
+            {
+                "price": 24,
+                "timestamp": 1680757209529
             }
         ]
     },
@@ -817,6 +1037,66 @@
             {
                 "price": 229,
                 "timestamp": 1680728404383
+            },
+            {
+                "price": 229,
+                "timestamp": 1680735605617
+            },
+            {
+                "price": 229,
+                "timestamp": 1680739204974
+            },
+            {
+                "price": 229,
+                "timestamp": 1680742804924
+            },
+            {
+                "price": 229,
+                "timestamp": 1680746404141
+            },
+            {
+                "price": 229,
+                "timestamp": 1680750005083
+            },
+            {
+                "price": 229,
+                "timestamp": 1680753604615
+            },
+            {
+                "price": 229,
+                "timestamp": 1680757204424
+            },
+            {
+                "price": 229,
+                "timestamp": 1680760804433
+            },
+            {
+                "price": 229,
+                "timestamp": 1680764404962
+            },
+            {
+                "price": 229,
+                "timestamp": 1680768005095
+            },
+            {
+                "price": 229,
+                "timestamp": 1680771605167
+            },
+            {
+                "price": 229,
+                "timestamp": 1680775204933
+            },
+            {
+                "price": 229,
+                "timestamp": 1680778804270
+            },
+            {
+                "price": 229,
+                "timestamp": 1680782405006
+            },
+            {
+                "price": 229,
+                "timestamp": 1680786004989
             }
         ]
     },
@@ -916,6 +1196,66 @@
             {
                 "price": 99,
                 "timestamp": 1680728404600
+            },
+            {
+                "price": 99,
+                "timestamp": 1680735604693
+            },
+            {
+                "price": 99,
+                "timestamp": 1680739205843
+            },
+            {
+                "price": 99,
+                "timestamp": 1680742804402
+            },
+            {
+                "price": 99,
+                "timestamp": 1680746404605
+            },
+            {
+                "price": 99,
+                "timestamp": 1680750003745
+            },
+            {
+                "price": 99,
+                "timestamp": 1680753604388
+            },
+            {
+                "price": 99,
+                "timestamp": 1680757209352
+            },
+            {
+                "price": 99,
+                "timestamp": 1680760803739
+            },
+            {
+                "price": 99,
+                "timestamp": 1680764404138
+            },
+            {
+                "price": 99,
+                "timestamp": 1680768004991
+            },
+            {
+                "price": 99,
+                "timestamp": 1680771604789
+            },
+            {
+                "price": 99,
+                "timestamp": 1680775204365
+            },
+            {
+                "price": 99,
+                "timestamp": 1680778804500
+            },
+            {
+                "price": 99,
+                "timestamp": 1680782404065
+            },
+            {
+                "price": 99,
+                "timestamp": 1680786004832
             }
         ]
     },
@@ -1015,6 +1355,160 @@
             {
                 "price": 45,
                 "timestamp": 1680728404094
+            },
+            {
+                "price": 45,
+                "timestamp": 1680735604499
+            },
+            {
+                "price": 45,
+                "timestamp": 1680739204614
+            },
+            {
+                "price": 45,
+                "timestamp": 1680742803738
+            },
+            {
+                "price": 45,
+                "timestamp": 1680746403614
+            },
+            {
+                "price": 45,
+                "timestamp": 1680750004057
+            },
+            {
+                "price": 45,
+                "timestamp": 1680753604220
+            },
+            {
+                "price": 45,
+                "timestamp": 1680757214039
+            },
+            {
+                "price": 45,
+                "timestamp": 1680760804301
+            },
+            {
+                "price": 45,
+                "timestamp": 1680764403874
+            },
+            {
+                "price": 45,
+                "timestamp": 1680768003934
+            },
+            {
+                "price": 45,
+                "timestamp": 1680771604198
+            },
+            {
+                "price": 45,
+                "timestamp": 1680775204166
+            },
+            {
+                "price": 45,
+                "timestamp": 1680778803863
+            },
+            {
+                "price": 45,
+                "timestamp": 1680782404888
+            },
+            {
+                "price": 45,
+                "timestamp": 1680786004658
+            }
+        ]
+    },
+    {
+        "name": "ztarraum Bouteille Huile Olive, Distributeur D'huile D'olive, Flacons En Verre Et Bec Verseur Pour Cuisine, Avec Bec Verseur Sans Goutte, Récipient à Condiments Liquides, 500ml",
+        "asin": "B08XJSN7CZ",
+        "image": "https://m.media-amazon.com/images/I/51THMQFif9L.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "data": [
+            {
+                "price": 13,
+                "timestamp": 1680739205437
+            },
+            {
+                "price": 13,
+                "timestamp": 1680742804199
+            },
+            {
+                "price": 13,
+                "timestamp": 1680746403801
+            },
+            {
+                "price": 13,
+                "timestamp": 1680750004724
+            },
+            {
+                "price": 13,
+                "timestamp": 1680753605057
+            },
+            {
+                "price": 13,
+                "timestamp": 1680757209241
+            },
+            {
+                "price": 13,
+                "timestamp": 1680760804618
+            },
+            {
+                "price": 13,
+                "timestamp": 1680764404779
+            },
+            {
+                "price": 13,
+                "timestamp": 1680768004798
+            },
+            {
+                "price": 13,
+                "timestamp": 1680771604934
+            },
+            {
+                "price": 13,
+                "timestamp": 1680775204794
+            },
+            {
+                "price": 13,
+                "timestamp": 1680778804949
+            },
+            {
+                "price": 13,
+                "timestamp": 1680782404289
+            }
+        ]
+    },
+    {
+        "name": "Fockety 7pcs Metal DND Dice Ensemble, Polyhedron DND7 Dungeons and Dragons Metal DND Dice Set, Hollow Polyédral Dice Ensemble avec Boîte pour Les Donjons et Les Dragons Joues de Rôle de Jeu de Dés",
+        "asin": "B0B68XK8LC",
+        "image": "https://m.media-amazon.com/images/I/8197rIUEOcL.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "data": [
+            {
+                "price": 41,
+                "timestamp": 1680768004609
+            },
+            {
+                "price": 41,
+                "timestamp": 1680771604329
+            },
+            {
+                "price": 41,
+                "timestamp": 1680775204489
+            },
+            {
+                "price": 41,
+                "timestamp": 1680778804618
+            },
+            {
+                "price": 41,
+                "timestamp": 1680782403851
+            },
+            {
+                "price": 41,
+                "timestamp": 1680786004304
+            },
+            {
+                "price": 41,
+                "timestamp": 1680789604243
             }
         ]
     }
