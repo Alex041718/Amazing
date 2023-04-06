@@ -34,7 +34,7 @@ https://www.amazon.fr/sspa/click?ie=UTF8&spc=MTo1OTM2NzAwMDA0ODA2NjE6MTY4MDY4NTk
 
 
 
-Réduire le titre de facon générale avec la possibilité de le voir en entier en cliquant dessus
+
 
 Après l'ajout d'un product, rediriger vers la page précedente.
 gérer l'état ou le produit est enregistrer dans listProducts.json mais pas dans dataProducts.json
