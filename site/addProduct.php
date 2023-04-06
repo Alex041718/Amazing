@@ -3,7 +3,7 @@
 
 
 //$asin = "pute";
-$asin = $_POST['ASIN'];
+$asin = $_POST['asin'];
 // Construire l'URL de la requête en utilisant la valeur de la constante ASIN
 $url = "http://51.38.35.91:3000/products/addProduct?ASIN={$asin}";
 
@@ -26,5 +26,7 @@ $response = curl_exec($curl);
 
 curl_close($curl);
 
+header("Location: http://amazing.alexandre-le-marec.fr/index.php?asin={$asin}&successAdd=true");
+exit();
 
 ?>
