@@ -5,7 +5,7 @@
 //$asin = "pute";
 $asin = $_GET['asin'];
 // Construire l'URL de la requête en utilisant la valeur de la constante ASIN
-$url = "http://51.38.35.91:3000/products/addProduct?asin={$asin}";
+$url = "http://51.38.35.91:3000/products/addProduct?ASIN={$asin}";
 
 $curl = curl_init();
 
