@@ -10,16 +10,18 @@ async function getPrice(asin) {
 
     let config = {
         method: 'get',
-        url: `https://www.amazon.fr/dp/${asin}`,
+        maxBodyLength: Infinity,
+        url: 'https://www.amazon.fr/dp/B07W6JFPT1',
         headers: { 
-            'Cookie': 'i18n-prefs=EUR; session-id=262-9166251-5336201; session-id-time=2082787201l; session-token="JoK7kIbu2yYZ0Isg4IniWL0iQrlNTCm6ICuv5/nO0Bk7kRWtNviTYh/xbLWUgx5+5xXvsQUXZG95WiNyM1I6ygHqzsm0FrrkiEtA9ZgGKVaBNMaEMgrK4JhV0muVgqgScFaV2zaVk2Vos3QWataOV1Kd0U42AYhl6xrAxfHwfMXFRgvxNC3Z+eVMxcXfE6MJRVcE+SaZ202Fjn1KnCsg2iAGem3IGwTz+GKnl9lNFgc="; ubid-acbfr=259-4082130-8876267'
-          }
+          'Cookie': 'i18n-prefs=EUR; session-id=262-9166251-5336201; session-id-time=2082787201l; session-token="g+BT3yIKYqRgauMha39Tpn7MtAmV2YtfbmUw4y9GA1jDbXod56cAbshwxBs6985JAOdsb01IPBRO3+6Fumq0sXU89teWoRyYc/9C2pTzBd6eXIecNODfVKtIWqriIU2F5sp+ybFNkpoCwhYuPHsEaybT2H1kmvIW605tZR5X1t/QPevOLi/1i9fEJ7Ihsl7X7UdkSMKRBXqCM8csPaCwPmNMZ1qEqZbcfYf4xZhvmkU="; ubid-acbfr=259-4082130-8876267'
+        }
     };
 
     return new Promise((resolve, reject) => {
         axios.request(config)
             .then((response) => {
                 try {
+                    //console.log(response.data);
                     var root = parse(response.data);
 
                     
