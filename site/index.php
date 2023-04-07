@@ -117,7 +117,7 @@ titleElement.addEventListener('click', function() {
 
 <?php
 
-if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?' id='formAddProduct' method='POST'>
+if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?asin={$asin}' id='formAddProduct' method='POST'>
     <img id='svgNoData' src='svg/svgNoData.svg'>
     <input type='text' name='ASIN' value='{$asin}' style='display: none;' >
     </input>
