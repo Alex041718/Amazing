@@ -11,6 +11,7 @@ const fs = require('fs');
 const getPrice = require('./scripts/getAmazonProductByASIN');
 const getData = require('./scripts/getDataByASINorNot');
 const addProduct = require('./scripts/addProductByASIN');
+const pushOneProduct = require('./scripts/pushOneProduct');
 //const pushProduct = require('./scripts/pushProduct');
 
 let app = express();
