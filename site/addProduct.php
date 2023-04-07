@@ -3,9 +3,9 @@
 
 
 //$asin = "pute";
-$asin = $_POST['asin'];
+$asin = $_GET['asin'];
 // Construire l'URL de la requête en utilisant la valeur de la constante ASIN
-$url = "http://51.38.35.91:3000/products/addProduct?ASIN={$asin}";
+$url = "http://51.38.35.91:3000/products/addProduct?asin={$asin}";
 
 $curl = curl_init();
 
@@ -25,8 +25,8 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 
 curl_close($curl);
-
-header("Location: http://amazing.alexandre-le-marec.fr/index.php?asin={$asin}&successAdd=true");
+//echo "Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}&successAdd=true"
+header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}&successAdd=true");
 exit();
 
 ?>
