@@ -39,6 +39,19 @@ app.get('/products/getProductByASIN', async function(req, res) {
     
 });
 
+app.get('/products/pushOneProduct', async function(req, res) {
+
+   
+
+    if (req.query.ASIN) {
+        pushOneProduct(req.query.ASIN);
+        res.send("Product pushed");
+    } else {
+        res.send("No ASIN provided");
+    }
+    
+});
+
 app.get('/products/getDataPage', async function(req, res) {
 
     
