@@ -66,7 +66,7 @@
 
   // Redirection vers la page d'accueil avec un paramètre successAdd
   //echo "Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}&successAdd=true"
-  //header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}&successAdd=true");
+  header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin=B08H99BPJN");
   exit();
 
 
