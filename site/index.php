@@ -1,14 +1,14 @@
 
 <?php
 // Définir la constante ASIN avec une valeur
-header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin=B08H99BPJN");
+
 //$asin = "B08Q29FZNF";
 $asin = $_GET['asin'];
 // Construire l'URL de la requête en utilisant la valeur de la constante ASIN
 $url = "http://51.38.35.91:3000/products/getDataPage?ASIN={$asin}";
 
 $curl = curl_init();
-
+header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}");
 
 // Requête GET de l'API
 curl_setopt_array($curl, array(
