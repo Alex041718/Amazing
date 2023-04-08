@@ -176,7 +176,7 @@ else{echo "<canvas id='myChart'></canvas>";}
         
 
         </script>
-<?php header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}"); ?>
+<?php //header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}"); ?>
         <!--
   ╱|、
 (`   -  7
