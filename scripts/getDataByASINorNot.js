@@ -13,7 +13,7 @@ const rawData = fs.readFileSync(filePathProducts);
 const data = JSON.parse(rawData);
 
 //const ASIN = 'B07W6JFPT1' // connu
-const ASIN = 'B08N36XNTT' // pas connu
+//const ASIN = 'B08N36XNTT' // pas connu
 
 async function getDataByASINorNot(asin) {
 
