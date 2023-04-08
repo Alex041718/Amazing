@@ -31,9 +31,6 @@ curl_close($curl);
 sleep(2);
 
 
-
-
-
 // -------------- SCRAPPING POUR L'UNIQUE PRODUIT
 
 $url = "http://51.38.35.91:3000/products/pushOneProduct?ASIN={$asin}";
@@ -63,9 +60,13 @@ sleep(1);
 
 // Redirection vers la page d'accueil avec un paramètre successAdd
 //echo "Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}&successAdd=true"
-header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}&successAdd=true");
+//header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}&successAdd=true");
 exit();
 
 
 
 ?>
+
+<script>
+  window.location.href = "https://amazing.alexandre-le-marec.fr/index.php?asin=<?php echo $asin ?>&successAdd=true";
+</script>
