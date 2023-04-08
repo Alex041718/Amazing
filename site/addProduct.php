@@ -1,13 +1,19 @@
 <html>
+<?php 
+$asin = $_GET['asin'];
+?>
 
-<head></head>
+<head>
+	<title>Redirection</title>
+	<meta http-equiv="refresh" content="5; url=https://amazing.alexandre-le-marec.fr/index.php?asin=<?php echo $asin;?>">
+</head>
 
 <body>
 
   <?php
   // Définir la constante ASIN avec une valeur
 
-  $asin = $_GET['asin'];
+  //$asin = $_GET['asin'];
 
 
   echo ("Ajout en cours ...");
@@ -66,8 +72,8 @@
 
   // Redirection vers la page d'accueil avec un paramètre successAdd
   //echo "Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}&successAdd=true"
-  header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}");
-  exit();
+  //header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}");
+  //exit();
 
 
   ?>
