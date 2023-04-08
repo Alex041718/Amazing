@@ -1,7 +1,7 @@
 
 <?php
 // Définir la constante ASIN avec une valeur
-
+header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin=B08H99BPJN");
 //$asin = "B08Q29FZNF";
 $asin = $_GET['asin'];
 // Construire l'URL de la requête en utilisant la valeur de la constante ASIN
