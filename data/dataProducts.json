@@ -351,18 +351,6 @@
             {
                 "price": 34,
                 "timestamp": 1680899351531
-            },
-            {
-                "price": 99,
-                "timestamp": 1680899766644
-            },
-            {
-                "price": 99,
-                "timestamp": 1680900028744
-            },
-            {
-                "price": 99,
-                "timestamp": 1680902287260
             }
         ]
     },
@@ -638,18 +626,6 @@
             {
                 "price": 895,
                 "timestamp": 1680899351179
-            },
-            {
-                "price": 99,
-                "timestamp": 1680899767614
-            },
-            {
-                "price": 99,
-                "timestamp": 1680900028916
-            },
-            {
-                "price": 99,
-                "timestamp": 1680902287292
             }
         ]
     },
@@ -1059,18 +1035,6 @@
             {
                 "price": 106,
                 "timestamp": 1680897779132
-            },
-            {
-                "price": 99,
-                "timestamp": 1680899768503
-            },
-            {
-                "price": 99,
-                "timestamp": 1680900029000
-            },
-            {
-                "price": 99,
-                "timestamp": 1680902287044
             }
         ]
     },
@@ -1114,18 +1078,6 @@
             {
                 "price": 24,
                 "timestamp": 1680757209529
-            },
-            {
-                "price": 99,
-                "timestamp": 1680899769015
-            },
-            {
-                "price": 99,
-                "timestamp": 1680900028848
-            },
-            {
-                "price": 99,
-                "timestamp": 1680902286960
             }
         ]
     },
@@ -1695,22 +1647,6 @@
             {
                 "price": 45,
                 "timestamp": 1680899350593
-            },
-            {
-                "price": 99,
-                "timestamp": 1680899768062
-            },
-            {
-                "price": 99,
-                "timestamp": 1680900028943
-            },
-            {
-                "price": 99,
-                "timestamp": 1680900840991
-            },
-            {
-                "price": 99,
-                "timestamp": 1680902287122
             }
         ]
     },
@@ -1805,32 +1741,6 @@
             {
                 "price": 41,
                 "timestamp": 1680789604243
-            }
-        ]
-    },
-    {
-        "name": "Logitech MX Keys Advanced Clavier sans Fil Rétroéclairé, Bluetooth, Saisie Tactile Réactive, Rétroéclairage, USB-C, PC/Mac/Portable Windows/Linux/IOS/Android, AZERTY Français - Noir",
-        "asin": "B0B4DN441N",
-        "image": "https://m.media-amazon.com/images/I/71JG7rXKxOL.__AC_SX300_SY300_QL70_ML2_.jpg",
-        "data": [
-            {
-                "price": 99,
-                "timestamp": 1680901058977
-            },
-            {
-                "price": 99,
-                "timestamp": 1680902287223
-            }
-        ]
-    },
-    {
-        "name": "Logitech MX Keys Advanced Clavier sans Fil Rétroéclairé, Bluetooth, Saisie Tactile Réactive, Rétroéclairage, USB-C, PC/Mac/Portable Windows/Linux/IOS/Android, AZERTY Français - Noir",
-        "asin": "B093C2WDBR",
-        "image": "https://m.media-amazon.com/images/I/71JG7rXKxOL.__AC_SX300_SY300_QL70_ML2_.jpg",
-        "data": [
-            {
-                "price": 99,
-                "timestamp": 1680902607474
             }
         ]
     }
