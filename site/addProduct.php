@@ -72,7 +72,7 @@
   echo ("
 <script>
   
-  window.location.assign('https://amazing.alexandre-le-marec.fr/index.php?asin=<?php echo $asin ?>&successAdd=true');
+  window.location.assign('https://amazing.alexandre-le-marec.fr/index.php?asin=$asin&successAdd=true');
 </script>
 ");
 
