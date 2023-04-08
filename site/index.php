@@ -8,7 +8,7 @@ $asin = $_GET['asin'];
 $url = "http://51.38.35.91:3000/products/getDataPage?ASIN={$asin}";
 
 $curl = curl_init();
-header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}");
+
 
 // Requête GET de l'API
 curl_setopt_array($curl, array(
@@ -176,7 +176,7 @@ else{echo "<canvas id='myChart'></canvas>";}
         
 
         </script>
-
+<?php header("Location: https://amazing.alexandre-le-marec.fr/index.php?asin={$asin}"); ?>
         <!--
   ╱|、
 (`   -  7
