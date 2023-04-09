@@ -13,6 +13,7 @@ const getData = require('./scripts/getDataByASINorNot');
 const addProduct = require('./scripts/addProductByASIN');
 const pushOneProduct = require('./scripts/pushOneProduct');
 //const pushProduct = require('./scripts/pushProduct');
+const getDataSearch = require('./scripts/getDataSearchOnAmazon');
 
 let app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -69,6 +70,23 @@ app.get('/products/getDataPage', async function(req, res) {
     
 });
 
+app.get('/products/getDataSearch', async function(req, res) {
+
+    
+
+    if (req.query.S) {
+        getDataSearch(req.query.S).then((response) => {
+            res.send(response);
+        }).catch((error) => {
+            res.status(404)
+            res.send("Error 404, wesh");
+        });
+    } else {
+        res.send("No argument provided");
+    }
+    
+});
+
 
 
 app.get('/products/addProduct', async function(req, res) {
@@ -84,6 +102,8 @@ app.get('/products/addProduct', async function(req, res) {
     }
     
 });
+
+
 
 app.get('/products', async function(req, res) {
 

@@ -57,7 +57,7 @@ async function getPrice(asin) {
     
                             "image": root.querySelector('#landingImage').getAttribute('src'),
     
-                            "price": parseFloat(root.querySelector('#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay > span.a-offscreen').text.trim().split('€')[0]),
+                            "price": parseInt(root.querySelector('#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay > span.a-offscreen').text.trim().split('€')[0].replace(/\s+/g, '').replace(',', '.')),
     
                             "timestamp": getTimeStamp(),
                         }
@@ -79,7 +79,7 @@ async function getPrice(asin) {
 
 module.exports = getPrice;
 
-const ASIN = 'B09V3KN99J';
-(async () => {console.log(await getPrice(ASIN));})();
+//const ASIN = 'B08L5T293R';
+//(async () => {console.log(await getPrice(ASIN));})();
 
 

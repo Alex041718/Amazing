@@ -2,7 +2,7 @@ const axios = require('axios');
 const { parse } = require('node-html-parser');
 
 
-const search= 'iphone';
+//const search= 'iphone+12+pro+max';
 
 async function getListSearch(search) {
 
@@ -54,4 +54,4 @@ async function getListSearch(search) {
 
 module.exports = getListSearch;
 
-(async () => {console.log(await getListSearch(search));})();
+//(async () => {console.log(await getListSearch(search));})();
