@@ -351,6 +351,94 @@
             {
                 "price": 34,
                 "timestamp": 1680899351531
+            },
+            {
+                "price": 34,
+                "timestamp": 1680991204705
+            },
+            {
+                "price": 34,
+                "timestamp": 1680994808711
+            },
+            {
+                "price": 34,
+                "timestamp": 1680998405145
+            },
+            {
+                "price": 34,
+                "timestamp": 1681002004008
+            },
+            {
+                "price": 34,
+                "timestamp": 1681005604473
+            },
+            {
+                "price": 34,
+                "timestamp": 1681009204314
+            },
+            {
+                "price": 34,
+                "timestamp": 1681012803641
+            },
+            {
+                "price": 34,
+                "timestamp": 1681016404559
+            },
+            {
+                "price": 34,
+                "timestamp": 1681020004903
+            },
+            {
+                "price": 34,
+                "timestamp": 1681023603742
+            },
+            {
+                "price": 34,
+                "timestamp": 1681027203265
+            },
+            {
+                "price": 34,
+                "timestamp": 1681030803841
+            },
+            {
+                "price": 34,
+                "timestamp": 1681034404691
+            },
+            {
+                "price": 34,
+                "timestamp": 1681038004483
+            },
+            {
+                "price": 34,
+                "timestamp": 1681041604098
+            },
+            {
+                "price": 34,
+                "timestamp": 1681045204523
+            },
+            {
+                "price": 34,
+                "timestamp": 1681052404003
+            },
+            {
+                "price": 34,
+                "timestamp": 1681056004898
+            },
+            {
+                "price": 34,
+                "timestamp": 1681059604291
+            },
+            {
+                "price": 34,
+                "timestamp": 1681063204493
+            },
+            {
+                "price": 34,
+                "timestamp": 1681066804303
+            },
+            {
+                "price": 34,
+                "timestamp": 1681070404524
             }
         ]
     },
@@ -626,6 +714,38 @@
             {
                 "price": 895,
                 "timestamp": 1680899351179
+            },
+            {
+                "price": 895,
+                "timestamp": 1680994804315
+            },
+            {
+                "price": 895,
+                "timestamp": 1680998404832
+            },
+            {
+                "price": 895,
+                "timestamp": 1681012804223
+            },
+            {
+                "price": 895,
+                "timestamp": 1681016404387
+            },
+            {
+                "price": 895,
+                "timestamp": 1681052404235
+            },
+            {
+                "price": 895,
+                "timestamp": 1681056004618
+            },
+            {
+                "price": 895,
+                "timestamp": 1681059604723
+            },
+            {
+                "price": 895,
+                "timestamp": 1681066804990
             }
         ]
     },
@@ -940,6 +1060,10 @@
             {
                 "price": 99,
                 "timestamp": 1680902287009
+            },
+            {
+                "price": 109,
+                "timestamp": 1680994804598
             }
         ]
     },
@@ -1078,6 +1202,10 @@
             {
                 "price": 24,
                 "timestamp": 1680757209529
+            },
+            {
+                "price": 24,
+                "timestamp": 1681002004593
             }
         ]
     },
@@ -1420,6 +1548,62 @@
             {
                 "price": 99,
                 "timestamp": 1680902287188
+            },
+            {
+                "price": 99,
+                "timestamp": 1680994809076
+            },
+            {
+                "price": 99,
+                "timestamp": 1680998404577
+            },
+            {
+                "price": 99,
+                "timestamp": 1681002004363
+            },
+            {
+                "price": 99,
+                "timestamp": 1681005604643
+            },
+            {
+                "price": 99,
+                "timestamp": 1681009204810
+            },
+            {
+                "price": 99,
+                "timestamp": 1681012804455
+            },
+            {
+                "price": 99,
+                "timestamp": 1681020004720
+            },
+            {
+                "price": 99,
+                "timestamp": 1681030804683
+            },
+            {
+                "price": 99,
+                "timestamp": 1681034404528
+            },
+            {
+                "price": 99,
+                "timestamp": 1681038005011
+            },
+            {
+                "price": 99,
+                "timestamp": 1681041604323
+            },
+            {
+                "price": 99,
+                "timestamp": 1681056005188
+            },
+            {
+                "price": 99,
+                "timestamp": 1681059605014
+            },
+            {
+                "price": 99,
+                "timestamp": 1681066805222
             }
         ]
     },
@@ -1647,6 +1831,62 @@
             {
                 "price": 45,
                 "timestamp": 1680899350593
+            },
+            {
+                "price": 45,
+                "timestamp": 1680991204516
+            },
+            {
+                "price": 45,
+                "timestamp": 1680998404275
+            },
+            {
+                "price": 45,
+                "timestamp": 1681005604777
+            },
+            {
+                "price": 45,
+                "timestamp": 1681009204100
+            },
+            {
+                "price": 45,
+                "timestamp": 1681012803903
+            },
+            {
+                "price": 45,
+                "timestamp": 1681016404179
+            },
+            {
+                "price": 45,
+                "timestamp": 1681038004719
+            },
+            {
+                "price": 45,
+                "timestamp": 1681041604470
+            },
+            {
+                "price": 45,
+                "timestamp": 1681045204715
+            },
+            {
+                "price": 45,
+                "timestamp": 1681048803447
+            },
+            {
+                "price": 45,
+                "timestamp": 1681056004753
+            },
+            {
+                "price": 45,
+                "timestamp": 1681059604468
+            },
+            {
+                "price": 45,
+                "timestamp": 1681066804453
+            },
+            {
+                "price": 45,
+                "timestamp": 1681070404379
             }
         ]
     },
@@ -1741,6 +1981,63 @@
             {
                 "price": 41,
                 "timestamp": 1680789604243
+            }
+        ]
+    },
+    {
+        "name": "Babacom Support Ordinateur Portable, Support Pc Portable Réglable en Antidérapant Aluminium Ventilé, Ergonomique Pliable Compatible avec MacBook Air, Pro, Dell, et Autre Laptops Tablettes 10” - 16”",
+        "asin": "B096KHQWMF",
+        "image": "https://m.media-amazon.com/images/I/61Q3A42y5bS.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "data": [
+            {
+                "price": 24,
+                "timestamp": 1680987916571
+            },
+            {
+                "price": 24,
+                "timestamp": 1681005605036
+            },
+            {
+                "price": 24,
+                "timestamp": 1681009204592
+            },
+            {
+                "price": 24,
+                "timestamp": 1681030804494
+            }
+        ]
+    },
+    {
+        "name": "iClever Clavier sans Fil Bluetooth Rechargeable Connecter 1 à 3 appareils AZERTY Mac iPad air Pro Tablette Ordinateur PC iPhone iOS Android Windows Ultra-Mince",
+        "asin": "B09HPH9M4H",
+        "image": "https://m.media-amazon.com/images/I/61q2lociOoL.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "data": [
+            {
+                "price": 41,
+                "timestamp": 1680989244195
+            },
+            {
+                "price": 41,
+                "timestamp": 1681009203891
+            },
+            {
+                "price": 41,
+                "timestamp": 1681052404396
+            },
+            {
+                "price": 41,
+                "timestamp": 1681066804755
+            }
+        ]
+    },
+    {
+        "name": "Apple iPhone 13 (128 Go) - Vert",
+        "asin": "B09V3KN99J",
+        "image": "https://m.media-amazon.com/images/I/61-r9zOKBCL.__AC_SY445_SX342_QL70_ML2_.jpg",
+        "data": [
+            {
+                "price": 799,
+                "timestamp": 1681064479900
             }
         ]
     }

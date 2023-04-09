@@ -1,6 +1,6 @@
 const axios = require('axios');
 const { parse } = require('node-html-parser');
-
+const cheerio = require('cheerio');
 const getTimeStamp = require('./getTimeStamp');
 
 
@@ -23,19 +23,47 @@ async function getPrice(asin) {
                 try {
                     //console.log(response.data);
                     var root = parse(response.data);
-
                     
-                    var res = {
-                        "name": root.querySelector('#centerCol #title_feature_div #titleSection #title #productTitle').text.trim(),
+                    
+                    if (root.querySelector('#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay > span.a-offscreen') == null) {
+                        console.log('la disposition à chier');
+                        var res = {
+                            //ça c'est la disposition html la moins classique
 
-                        "asin": asin,
+                            "name": root.querySelector('#productTitle').text.trim(),
+    
+                            "asin": asin,
+    
+                            "image": root.querySelector('#main-image-container > ul > li.image.item.itemNo0.maintain-height.selected > span > span > div > img').getAttribute('src'),
+    
+                            //"price": String(root.querySelector('#corePrice_desktop')),
+    
+                            "timestamp": getTimeStamp(),
+                        }
 
-                        "image": root.querySelector('#landingImage').getAttribute('src'),
+                        var priceResponse = String(root.querySelector('#corePrice_desktop'))
+                        const $ = cheerio.load(priceResponse);
+                        var price = $('.a-price .a-offscreen').text().trim();
+                        price = parseFloat(price.split('€')[0]);
+                        res.price = price;
 
-                        "price": parseFloat(root.querySelector('span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay .a-offscreen').text.trim().split('€')[0]),
+                    } else {
+                        console.log('la disposition classique');
+                        var res = {
+                            //ça c'est la disposition html la plus classique
+                            "name": root.querySelector('#productTitle').text.trim(),
+    
+                            "asin": asin,
+    
+                            "image": root.querySelector('#landingImage').getAttribute('src'),
+    
+                            "price": parseFloat(root.querySelector('#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay > span.a-offscreen').text.trim().split('€')[0]),
+    
+                            "timestamp": getTimeStamp(),
+                        }
 
-                        "timestamp": getTimeStamp(),
                     }
+                    
 
                     resolve(res);
                 } catch (error) {
@@ -51,7 +79,7 @@ async function getPrice(asin) {
 
 module.exports = getPrice;
 
-//const ASIN = '2092574280';
-//(async () => {console.log(await getPrice(ASIN));})();
+const ASIN = 'B09V3KN99J';
+(async () => {console.log(await getPrice(ASIN));})();
 
 

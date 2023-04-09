@@ -1,1 +1,1 @@
-<?php echo date("d-m-Y H:i:s", substr("1621157545307", 0, 10)); ?>
+<?php echo gettype($_GET['asin']) ?>
