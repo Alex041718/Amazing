@@ -58,7 +58,7 @@ $data = json_decode($response);
 
 <?php
 
-    echo $data[$i], "-";
+    //echo $data[$i], "-";
 
     $asin = $data[$i];
 
@@ -89,10 +89,21 @@ $data = json_decode($response);
     
 ?>
 
-<div>
+<div class="productContainer">
     <img src="<?php echo $dataAPI['image'] ?>" width="100px">
-    <h3><?php echo $dataAPI['name'] ?></h3>
+    <a href='https://amazing.alexandre-le-marec.fr/product.php?asin=<?php echo $dataAPI['asin'] ?>'><h3><?php echo $dataAPI['name'] ?></h3></a>
     <p><?php echo $dataAPI['price'] ?></p>
+    <?php
+
+if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?asin={$asin}&direction=searchPage&searchedword={$searchEncode}' id='formAddProduct' method='POST'>
+    
+    
+    <button id='buttonAddProduct' type='submit'>Add product <b>+</b> </button>
+    </form>";}
+else{echo "non";}
+
+
+?>
 </div>
 
 

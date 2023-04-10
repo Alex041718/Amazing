@@ -1,11 +1,20 @@
 <html>
 <?php 
 $asin = $_GET['asin'];
+$direction = $_GET['direction']; //productPage or searchPage Si searchPage, on redirige vers la page de recherche avec $searchedword en paramètre.
+
+if ($direction == "productPage") {
+  $url = "https://amazing.alexandre-le-marec.fr/product.php?asin={$asin}";
+} else {
+  $searchedword = urlencode($_GET['searchedword']);
+  $url = "https://amazing.alexandre-le-marec.fr/search.php?S={$searchedword}";
+}
+
 ?>
 
 <head>
 	<title>Redirection</title>
-	<meta http-equiv="refresh" content="5; url=https://amazing.alexandre-le-marec.fr/index.php?asin=<?php echo $asin;?>">
+	<meta http-equiv="refresh" content="5; url=<?php echo $url;?>">
 </head>
 
 <body>
