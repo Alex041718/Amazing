@@ -2,7 +2,7 @@
 
 
 <h1>Search</h1>
-<form action='search.php' method='GET'>
+<form action='index.php' method='GET'>
     <input type="text" name="S">
     <button type="submit">Search</button>
 </form>
@@ -18,7 +18,7 @@
 <?php $search = $_GET['S']; ?>
 
 <h1>Search</h1>
-<form action='search.php' method='GET'>
+<form action='index.php' method='GET'>
     <input type="text" name="S" value="<?php echo $search ?>">
     <button type="submit">Search</button>
 </form>
