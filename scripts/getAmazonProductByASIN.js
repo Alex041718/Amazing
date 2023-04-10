@@ -27,25 +27,50 @@ async function getPrice(asin) {
                     
                     if (root.querySelector('#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay > span.a-offscreen') == null) {
                         console.log('la disposition à chier');
-                        var res = {
-                            //ça c'est la disposition html la moins classique
+                        if (root.querySelector('#main-image-container > ul > li.image.item.itemNo0.maintain-height.selected > span > span > div > img') == null) { 
 
-                            "name": root.querySelector('#productTitle').text.trim(),
-    
-                            "asin": asin,
-    
-                            "image": root.querySelector('#main-image-container > ul > li.image.item.itemNo0.maintain-height.selected > span > span > div > img').getAttribute('src'),
-    
-                            //"price": String(root.querySelector('#corePrice_desktop')),
-    
-                            "timestamp": getTimeStamp(),
+                            console.log('la disposition à chier 2');
+                            var res = {
+                                //ça c'est la disposition à chier
+
+                                "name": root.querySelector('#productTitle').text.trim(),
+        
+                                "asin": asin,
+        
+                                "image": root.querySelector('#imgBlkFront').getAttribute('src'),
+        
+                                "price": parseInt(root.querySelector('#corePrice_feature_div > div > span > span.a-offscreen').text.trim().split('€')[0].replace(/\s+/g, '').replace(',', '.')),
+        
+                                "timestamp": getTimeStamp(),
+                            }
+
+
+
+                        } else {
+                            var res = {
+                                //ça c'est la disposition à chier
+
+                                "name": root.querySelector('#productTitle').text.trim(),
+        
+                                "asin": asin,
+        
+                                "image": root.querySelector('#main-image-container > ul > li.image.item.itemNo0.maintain-height.selected > span > span > div > img').getAttribute('src'),
+        
+                                //"price": String(root.querySelector('#corePrice_desktop')),
+        
+                                "timestamp": getTimeStamp(),
+                            }
+                            var priceResponse = String(root.querySelector('#corePrice_desktop'))
+                            const $ = cheerio.load(priceResponse);
+                            var price = $('.a-price .a-offscreen').text().trim();
+                            price = parseFloat(price.split('€')[0]);
+                            res.price = price;
                         }
+                        
 
-                        var priceResponse = String(root.querySelector('#corePrice_desktop'))
-                        const $ = cheerio.load(priceResponse);
-                        var price = $('.a-price .a-offscreen').text().trim();
-                        price = parseFloat(price.split('€')[0]);
-                        res.price = price;
+
+
+                        
 
                     } else {
                         console.log('la disposition classique');
@@ -79,7 +104,7 @@ async function getPrice(asin) {
 
 module.exports = getPrice;
 
-//const ASIN = 'B08L5T293R';
-//(async () => {console.log(await getPrice(ASIN));})();
+const ASIN = 'B07TJKCCRJ';
+(async () => {console.log(await getPrice(ASIN));})();
 
 
