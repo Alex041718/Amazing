@@ -7,7 +7,7 @@ if ($direction == "productPage") {
   $url = "https://amazing.alexandre-le-marec.fr/product.php?asin={$asin}";
 } else {
   $searchedword = urlencode($_GET['searchedword']);
-  $url = "https://amazing.alexandre-le-marec.fr/index.php.php?S={$searchedword}";
+  $url = "https://amazing.alexandre-le-marec.fr/index.php?S={$searchedword}";
 }
 
 ?>

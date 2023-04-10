@@ -47,7 +47,7 @@ curl_close($curl);
 
 $data = json_decode($response);
 
-//print_r($data);
+print_r($data);
 
 
 ?>
