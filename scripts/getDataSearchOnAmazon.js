@@ -55,5 +55,5 @@ async function getListSearch(search) {
 module.exports = getListSearch;
 
 //const search= 'roi+chronique+tueur';
-//const search= 'iphone+12+pro+max ';
-//(async () => {console.log(await getListSearch(search));})();
+const search= 'airpods+max';
+(async () => {console.log(await getListSearch(search));})();

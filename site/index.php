@@ -1,3 +1,14 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link type="text/css" rel="stylesheet" href="styleSearch.css" />
+</head>
+
+<body>
+
+
 <?php if (empty($_GET)): ?> <!-- IF -->
 
 
@@ -114,3 +125,7 @@ else{echo "non";}
 
 
 <?php endif; ?>
+
+
+</body>
+</html>
