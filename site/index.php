@@ -13,14 +13,14 @@
 <?php if (empty($_GET)): ?> <!-- IF -->
 
 
-<h1>Search</h1>
+<h1>Amazing</h1>
 
 <form id="searchForm" action='index.php' method='GET'>
     <input id="searchInput" type="text" name="S">
     <button type="submit">Search</button>
 </form>
 
-
+<img id="gif" src="gif/cat.gif">
 
 
 
@@ -30,7 +30,7 @@
 
 <?php $search = $_GET['S']; ?>
 
-<h1>Search</h1>
+<h1>Amazing</h1>
 <form id="searchForm" action='index.php' method='GET'>
     <input id="searchInput" type="text" name="S" value="<?php echo $search ?>">
     <button type="submit">Search</button>
@@ -106,8 +106,22 @@ $data = json_decode($response);
     <img src="<?php echo $dataAPI['image'] ?>" >
 
     <div class="productInfo">
-        <a href='https://amazing.alexandre-le-marec.fr/product.php?asin=<?php echo $dataAPI['asin'] ?>'><h3><?php echo $dataAPI['name'] ?></h3></a>
-        <span class="price"><?php echo $dataAPI['price'] ?></span>
+
+        <a href='https://amazing.alexandre-le-marec.fr/product.php?asin=<?php echo $dataAPI['asin'] ?>'>
+            
+            
+            <h3 class="name" id="name<?php echo($i); ?>"><?php echo str_replace("'", "\'", str_replace('"', '\"', $dataAPI['name'])); ?></h3>
+            <script>
+                const titleElement<?php echo($i); ?> = document.querySelector('#name<?php echo($i); ?>'); // sélectionne l'élément HTML contenant le titre du produit
+const limit<?php echo($i); ?> = 60; // définit la limite de caractères souhaitée
+const reduceTitle<?php echo($i); ?> = titleElement<?php echo($i); ?>.textContent.slice(0, limit<?php echo($i); ?>) + '...';
+const longTitle<?php echo($i); ?> = '<?php echo str_replace("'", "\'", str_replace('"', '\"', $dataAPI['name'])); ?>';
+titleElement<?php echo($i); ?>.textContent = reduceTitle<?php echo($i); ?>;
+                
+            </script>
+        </a>
+
+        <span class="price"><?php echo $dataAPI['price'] ?> €</span>
     <?php
 
 if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?asin={$asin}&direction=searchPage&searchedword={$searchEncode}' id='formAddProduct' method='POST'>

@@ -30,3 +30,9 @@ Gérer le setPriceAlert :
     API : getDataPage => transmettre le prix de l'alerte, 0  par défault
     API : setPriceAlert => modifier le prix de l'alerte
     
+
+
+
+
+
+SI pas de prix alors pas de addProduct
