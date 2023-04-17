@@ -69,6 +69,8 @@ if($dataAPI['alreadySaved'] == true){
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styleIndex.css">
         <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="button.css" />
+        <script src="https://kit.fontawesome.com/a12680d986.js" crossorigin="anonymous"></script>
     </head>
     <body>
         
@@ -122,7 +124,7 @@ if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?asin={$asin
     <input type='text' name='ASIN' value='{$asin}' style='display: none;' >
     </input>
     
-    <button id='buttonAddProduct' type='submit'>Add product <b>+</b> </button>
+    <button class='buttonAddProductBig' type='submit'>Add product <b>+</b> </button>
     </form>";}
 else{echo "<canvas id='myChart'></canvas>";}
 

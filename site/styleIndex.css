@@ -130,24 +130,7 @@ h1[id="title"] {
         cursor: pointer;
 }
 
-#buttonAddProduct {
-        border: none;
-        color: white;
-        background-color: #FD6083;
-        border-radius: 50px;
-        padding: 10px 50px;
-        cursor: pointer;
-        
-        font-size: 20px;
-        font-weight: 500;
-}
 
-#formAddProduct {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto
-}
 
 
 

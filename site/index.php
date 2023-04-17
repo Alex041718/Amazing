@@ -2,8 +2,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+    <script src="https://kit.fontawesome.com/a12680d986.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="styleSearch.css" />
+    <link type="text/css" rel="stylesheet" href="button.css" />
 </head>
 
 <body>
@@ -13,8 +14,9 @@
 
 
 <h1>Search</h1>
-<form action='index.php' method='GET'>
-    <input type="text" name="S">
+
+<form id="searchForm" action='index.php' method='GET'>
+    <input id="searchInput" type="text" name="S">
     <button type="submit">Search</button>
 </form>
 
@@ -29,13 +31,13 @@
 <?php $search = $_GET['S']; ?>
 
 <h1>Search</h1>
-<form action='index.php' method='GET'>
-    <input type="text" name="S" value="<?php echo $search ?>">
+<form id="searchForm" action='index.php' method='GET'>
+    <input id="searchInput" type="text" name="S" value="<?php echo $search ?>">
     <button type="submit">Search</button>
 </form>
 
 <?php
-echo $search;
+//echo $search;
 $searchEncode = urlencode($search);
 
 $url = "http://51.38.35.91:3000/products/getDataSearch?S={$searchEncode}";
@@ -58,12 +60,12 @@ curl_close($curl);
 
 $data = json_decode($response);
 
-print_r($data);
+//print_r($data);
 
 
 ?>
 
-
+<div id="productsContainer">
 
 <?php for ($i = 0; $i < 4; ++$i): ?>
 
@@ -100,27 +102,28 @@ print_r($data);
     
 ?>
 
-<div class="productContainer">
-    <img src="<?php echo $dataAPI['image'] ?>" width="100px">
-    <a href='https://amazing.alexandre-le-marec.fr/product.php?asin=<?php echo $dataAPI['asin'] ?>'><h3><?php echo $dataAPI['name'] ?></h3></a>
-    <p><?php echo $dataAPI['price'] ?></p>
+<div class="oneProduct">
+    <img src="<?php echo $dataAPI['image'] ?>" >
+
+    <div class="productInfo">
+        <a href='https://amazing.alexandre-le-marec.fr/product.php?asin=<?php echo $dataAPI['asin'] ?>'><h3><?php echo $dataAPI['name'] ?></h3></a>
+        <span class="price"><?php echo $dataAPI['price'] ?></span>
     <?php
 
 if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?asin={$asin}&direction=searchPage&searchedword={$searchEncode}' id='formAddProduct' method='POST'>
     
     
-    <button id='buttonAddProduct' type='submit'>Add product <b>+</b> </button>
+    <button class='buttonAddProductSmall' type='submit'>Add product <b>+</b> </button>
     </form>";}
-else{echo "non";}
-
-
+else{echo "<i  class='fa-solid fa-check check' style='color: #00f900;'></i>";}
 ?>
+    </div>
 </div>
 
 
 <?php endfor; ?>
 
-
+</div>
 
 
 
