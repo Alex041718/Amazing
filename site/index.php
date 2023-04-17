@@ -2,9 +2,11 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a12680d986.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="styleSearch.css" />
     <link type="text/css" rel="stylesheet" href="button.css" />
+    <title>Amazing</title>
 </head>
 
 <body>
