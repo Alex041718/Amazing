@@ -2,7 +2,7 @@
     {
         "name": "Apple AirTag",
         "asin": "B0935DN1BN",
-        "alertPrice": 0,
+        "alertPrice": "0",
         "image": "https://m.media-amazon.com/images/I/71+5mYCqy7S._AC_SX342_SY445_.jpg",
         "data": [
             {

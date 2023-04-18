@@ -14,6 +14,7 @@ const addProduct = require('./scripts/addProductByASIN');
 const pushOneProduct = require('./scripts/pushOneProduct');
 //const pushProduct = require('./scripts/pushProduct');
 const getDataSearch = require('./scripts/getDataSearchOnAmazon');
+const changeAlertPrice = require('./scripts/changeAlertPrice');
 
 let app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -94,11 +95,25 @@ app.get('/products/addProduct', async function(req, res) {
     
 
     if (req.query.ASIN) {
-        addProduct(req.query.ASIN)
+        addProduct(req.query.ASIN);
         
         res.send("Product added");
     } else {
         res.send("No ASIN provided");
+    }
+    
+});
+
+app.get('/products/changeAlertPrice', async function(req, res) {
+
+    
+
+    if (req.query.ASIN && req.query.newPrice) {
+        
+        changeAlertPrice(req.query.ASIN, req.query.newPrice);
+        res.send("Price changed");
+    } else {
+        res.send("No ASIN or no new price provided ");
     }
     
 });
