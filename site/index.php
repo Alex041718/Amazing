@@ -60,87 +60,42 @@ $response = curl_exec($curl);
 
 curl_close($curl);
 
-$data = json_decode($response); //liste des ASIN
+$data = json_decode($response); 
 
 //print_r($data);
 
+$i = 0;
 
 ?>
 
 <div id="productsContainer">
 
-<?php for ($i = 0; $i < 4; ++$i): ?>
 
-<?php
-
-    // SCRAPING POUR CHAQUE ASIN
-
-
-
-
-    $asin = $data[$i];
-
-    $url = "http://51.38.35.91:3000/products/getDataPage?ASIN={$asin}";
-
-    $curl = curl_init();
+<?php foreach ($data as $item): ?>
+    <?php $i++; ?>
     
-    
-    // Requête GET de l'API
-    curl_setopt_array($curl, array(
-      CURLOPT_URL => $url,
-      CURLOPT_RETURNTRANSFER => true,
-      CURLOPT_ENCODING => '',
-      CURLOPT_MAXREDIRS => 10,
-      CURLOPT_TIMEOUT => 0,
-      CURLOPT_FOLLOWLOCATION => true,
-      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-      CURLOPT_CUSTOMREQUEST => 'GET',
-    ));
-    
-    $response = curl_exec($curl);
-    
-    curl_close($curl);
-    
-    
-    $dataAPI = json_decode($response, true);
+    <div class="oneProduct">
+        <img src="<?php echo $item->image ?>" alt="image">
+        <div class="productInfo">
+            <a href='https://amazing.alexandre-le-marec.fr/product.php?asin=<?php echo $item->asin; ?>'>
+                <h3 class="name" id="name<?php echo($i); ?>"><?php echo str_replace("'", "\'", str_replace('"', '\"', $item->name)); ?></h3>
+            </a>
 
-    
-?>
-
-<div class="oneProduct">
-    <img src="<?php echo $dataAPI['image'] ?>" >
-
-    <div class="productInfo">
-
-        <a href='https://amazing.alexandre-le-marec.fr/product.php?asin=<?php echo $dataAPI['asin'] ?>'>
+            <span class="price"><?php echo $item->price ?> €</span>
             
-            
-            <h3 class="name" id="name<?php echo($i); ?>"><?php echo str_replace("'", "\'", str_replace('"', '\"', $dataAPI['name'])); ?></h3>
-            <script>
-                const titleElement<?php echo($i); ?> = document.querySelector('#name<?php echo($i); ?>'); // sélectionne l'élément HTML contenant le titre du produit
-const limit<?php echo($i); ?> = 60; // définit la limite de caractères souhaitée
-const reduceTitle<?php echo($i); ?> = titleElement<?php echo($i); ?>.textContent.slice(0, limit<?php echo($i); ?>) + '...';
-const longTitle<?php echo($i); ?> = '<?php echo str_replace("'", "\'", str_replace('"', '\"', $dataAPI['name'])); ?>';
-titleElement<?php echo($i); ?>.textContent = reduceTitle<?php echo($i); ?>;
-                
-            </script>
-        </a>
 
-        <span class="price"><?php echo $dataAPI['price'] ?> €</span>
-    <?php
+            <?php
 
-if($dataAPI['alreadySaved'] != 1){echo "<form action='addProduct.php?asin={$asin}&direction=searchPage&searchedword={$searchEncode}' id='formAddProduct' method='POST'>
+if($item->alreadySaved != 1){echo "<form action='addProduct.php?asin={$item->asin}&direction=searchPage&searchedword={$searchEncode}' id='formAddProduct' method='POST'>
     
     
     <button class='buttonAddProductSmall' type='submit'>Add product <b>+</b> </button>
     </form>";}
 else{echo "<i  class='fa-solid fa-check check' style='color: #00f900;'></i>";}
 ?>
+        </div>
     </div>
-</div>
-
-
-<?php endfor; ?>
+<?php endforeach; ?>
 
 </div>
 
