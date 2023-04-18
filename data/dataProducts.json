@@ -2,6 +2,7 @@
     {
         "name": "Apple AirTag",
         "asin": "B0935DN1BN",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/71+5mYCqy7S._AC_SX342_SY445_.jpg",
         "data": [
             {
@@ -1241,6 +1242,7 @@
     {
         "name": "Apple iPhone 14 (128 Go) - Bleu",
         "asin": "B0BDJHR5DD",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/61bK6PMOC3L.__AC_SY445_SX342_QL70_ML2_.jpg",
         "data": [
             {
@@ -2344,6 +2346,7 @@
     {
         "name": "Apple AirPods Max - Argent",
         "asin": "B08Q29FZNF",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/81thV7SoLZL.__AC_SY445_SX342_QL70_ML2_.jpg",
         "data": [
             {
@@ -2499,6 +2502,7 @@
     {
         "name": "Logitech MX Keys Advanced Clavier sans Fil Rétroéclairé, Bluetooth, Saisie Tactile Réactive, Rétroéclairage, USB-C, PC/Mac/Portable Windows/Linux/IOS/Android, AZERTY Français - Noir",
         "asin": "B07W6JFPT1",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/71JG7rXKxOL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {
@@ -3458,6 +3462,7 @@
     {
         "name": "KOORUI Écran PC 24 Pouces Full HD (1920 x 1080), VA, 75Hz, 5ms, Mode Faible lumière Bleue, Angle de Vision de 178°, VGA et HDMI, Noir",
         "asin": "B09G6TX7L5",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/71TOE0w7DzL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {
@@ -4349,6 +4354,7 @@
     {
         "name": "Echo Dot (3ème génération), Enceinte connectée avec Alexa, Tissu anthracite",
         "asin": "B07PHPXHQS",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/61ab8NxB1JS._AC_SY300_SX300_.jpg",
         "data": [
             {
@@ -5192,6 +5198,7 @@
     {
         "name": "Dell P2421D - Écran LED - 24\" (24\" visualisable) - 2560 x 1440 QHD - IPS - 300 CD/m² - 1000:1-5 ms - HDMI, DisplayPort - avec Garantie de 3 Ans Advanced Exchange Basic Warranty Noir",
         "asin": "B085XDDLLX",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/61lMVp5VJ1S.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {
@@ -6131,6 +6138,7 @@
     {
         "name": "Philips Domestic Appliances CSA260/91 Senseo Maestro Machine à Café Dosettes avec Réservoir d'Eau de 1,2 Litre, Sélection l'Intensité du et Fonction Mémo, Produit Vert, Couleur : Rouge",
         "asin": "B0BFJGRRQH",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/61y5+9kRx5L._AC_SY300_SX300_.jpg",
         "data": [
             {
@@ -7182,6 +7190,7 @@
     {
         "name": "Apple Chargeur MagSafe",
         "asin": "B08L5R6ZHP",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/91Rh8F1g3kL.__AC_SY445_SX342_QL70_ML2_.jpg",
         "data": [
             {
@@ -8261,6 +8270,7 @@
     {
         "name": "ztarraum Bouteille Huile Olive, Distributeur D'huile D'olive, Flacons En Verre Et Bec Verseur Pour Cuisine, Avec Bec Verseur Sans Goutte, Récipient à Condiments Liquides, 500ml",
         "asin": "B08XJSN7CZ",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/51THMQFif9L.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {
@@ -8320,6 +8330,7 @@
     {
         "name": "Fockety 7pcs Metal DND Dice Ensemble, Polyhedron DND7 Dungeons and Dragons Metal DND Dice Set, Hollow Polyédral Dice Ensemble avec Boîte pour Les Donjons et Les Dragons Joues de Rôle de Jeu de Dés",
         "asin": "B0B68XK8LC",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/8197rIUEOcL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {
@@ -8355,6 +8366,7 @@
     {
         "name": "Babacom Support Ordinateur Portable, Support Pc Portable Réglable en Antidérapant Aluminium Ventilé, Ergonomique Pliable Compatible avec MacBook Air, Pro, Dell, et Autre Laptops Tablettes 10” - 16”",
         "asin": "B096KHQWMF",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/61Q3A42y5bS.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {
@@ -9174,6 +9186,7 @@
     {
         "name": "iClever Clavier sans Fil Bluetooth Rechargeable Connecter 1 à 3 appareils AZERTY Mac iPad air Pro Tablette Ordinateur PC iPhone iOS Android Windows Ultra-Mince",
         "asin": "B09HPH9M4H",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/61q2lociOoL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {
@@ -9993,6 +10006,7 @@
     {
         "name": "Apple iPhone 13 (128 Go) - Vert",
         "asin": "B09V3KN99J",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/61-r9zOKBCL.__AC_SY445_SX342_QL70_ML2_.jpg",
         "data": [
             {
@@ -10800,6 +10814,7 @@
     {
         "name": "Google Pixel 6a – Smartphone Android 5G débloqué avec appareil photo de 12 Mpx et 24 heures d'autonomie – Galet – Version FR",
         "asin": "B0B4DN441N",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/61WXksVWzOL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {
@@ -11603,6 +11618,7 @@
     {
         "name": "Fabsy Lot de 2 oreillers de lit-Oreiller en Microfibre-Oreiller Super Doux et Rafraîchissant, Rempli de bules de Polyester Respirantes-Durable–Coussin Réglable en Hauteur (Blanc, 60x60cm)",
         "asin": "B08YYX1TY5",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/71ynQTdA4JL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {
@@ -12350,6 +12366,7 @@
     {
         "name": "ASUS TUF GAMING NVIDIA GeForce RTX 4090 OC Edition – Carte graphique gaming (24GB GDDR6X, PCIe 4.0, HDMI 2.1a, DisplayPort 1.4a, Ventilateurs axiaux à double roulement à billes)",
         "asin": "B0BHD9TS9Q",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/71nOtSHR6FL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {
@@ -13041,6 +13058,7 @@
     {
         "name": "Irsap radiators Tesi Galileo colors radiator Tesi Join RJ2180008XX",
         "asin": "B00U7EQXUK",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/41qcqug0hAL.__AC_SY300_SX300_QL70_ML2_.jpg",
         "data": [
             {
@@ -13144,6 +13162,7 @@
     {
         "name": "Crayon de couleur - STABILO color - Étui carton de 12 crayons de coloriage",
         "asin": "B019OQ80SE",
+        "alertPrice": 0,
         "image": "https://m.media-amazon.com/images/I/81zLb3SO4YL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "data": [
             {

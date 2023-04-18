@@ -32,6 +32,7 @@ function saveProductJson(product){
             "name": product.name,
             "asin": product.asin,
             "image": product.image,
+            "alertPrice": 0,
             "data": [
                 {
                     "price": product.price,

@@ -103,7 +103,7 @@ titleElement.addEventListener('click', function() {
             <h1><?php echo $dataAPI['price'] . "€" ?></h1>
             <img id="pictureProcduct" src="<?php echo $dataAPI['image'] ?>">
             <hr id="lineSeparator">
-            <p>450€</p>
+            <p><?php echo $dataAPI['alertPrice'] ?></p>
             
 
             <form id="formPrice">
