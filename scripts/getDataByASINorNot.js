@@ -49,7 +49,9 @@ async function getDataByASINorNot(asin) {
     })
 };
 
-
-//getDatabyASINorNot(ASIN).then((response) => { console.log(response) });
-
 module.exports = getDataByASINorNot;
+
+//const ASIN = 'B0BJM9ZCL2';
+//getDataByASINorNot(ASIN).then((response) => { console.log(response) });
+
+

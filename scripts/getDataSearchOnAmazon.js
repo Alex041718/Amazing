@@ -1,6 +1,6 @@
 const axios = require('axios');
 const { parse } = require('node-html-parser');
-
+const getData = require('./getDataByASINorNot.js');
 
 
 
@@ -18,27 +18,22 @@ async function getListSearch(search) {
 
     return new Promise((resolve, reject) => {
         axios.request(config)
-            .then((response) => {
+            .then(async (response) => {
                 try {
-                    //console.log(response.data);
                     var root = parse(response.data);
+                    var res = [];
 
-                    
-                    var res = []
-
-                    for (let index = 3; index < 20; index++) {
-                        
-
-                        
-
+                    for (let index = 4; index < 5+4; index++) {
                         asin = root.querySelector(`#search > div.s-desktop-width-max.s-desktop-content.s-wide-grid-style-t3.s-opposite-dir.s-wide-grid-style.sg-row > div.sg-col-20-of-24.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span.rush-component.s-latency-cf-section > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(${index})`).getAttribute("data-asin");
 
                         if (asin != '') {
-                            res.push(asin);
+                            const response = await getData(asin);
+                            res.push(response);
                         }
-                        
                     }
-                    
+
+                    // Wait for all promises to resolve before resolving the main promise
+                    await Promise.all(res);
 
                     resolve(res);
                 } catch (error) {
@@ -49,11 +44,13 @@ async function getListSearch(search) {
             .catch((error) => {
                 reject(error);
             });
-    })
+    });
 };
+
 
 module.exports = getListSearch;
 
-//const search= 'roi+chronique+tueur';
-const search= 'airpods+max';
-(async () => {console.log(await getListSearch(search));})();
+//const search= 'iphone';
+//const search= 'airpods+max';
+
+//getListSearch(search).then((response) => { console.log(response) });
