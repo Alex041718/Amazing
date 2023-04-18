@@ -107,11 +107,12 @@ titleElement.addEventListener('click', function() {
             <?php if($dataAPI['alreadySaved'] == 1) : ?>
             <p><?php echo $dataAPI['alertPrice'] ?></p>
             
-            <form id="formPrice">
+            <form id="formPrice" action="changeAlertPrice.php" method="get">
             
-            <input id="inputPrice" placeholder="New price ?">
-            
-            <button id="buttonSetPrice">Set alert</button>
+                <input id="inputPrice" placeholder="New price ?" name="newPrice">
+                <input value="<?php echo $dataAPI['asin']; ?>" name="asin" style="display: none;">
+                
+                <button type="submit" id="buttonSetPrice">Set alert</button>
             </form>
             <?php endif; ?>
         </div>
