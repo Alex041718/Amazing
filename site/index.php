@@ -80,6 +80,15 @@ $i = 0;
             <a href='https://amazing.alexandre-le-marec.fr/product.php?asin=<?php echo $item->asin; ?>'>
                 <h3 class="name" id="name<?php echo($i); ?>"><?php echo str_replace("'", "\'", str_replace('"', '\"', $item->name)); ?></h3>
             </a>
+            <script>
+                const titleElement<?php echo($i); ?> = document.querySelector('#name<?php echo($i); ?>'); // sélectionne l'élément HTML contenant le titre du produit
+const limit<?php echo($i); ?> = 60; // définit la limite de caractères souhaitée
+const reduceTitle<?php echo($i); ?> = titleElement<?php echo($i); ?>.textContent.slice(0, limit<?php echo($i); ?>) + '...';
+if (titleElement<?php echo($i); ?>.textContent.length > limit<?php echo($i); ?>){
+    titleElement<?php echo($i); ?>.textContent = reduceTitle<?php echo($i); ?>;
+}
+
+</script>
 
             <span class="price"><?php echo $item->price ?> €</span>
             
