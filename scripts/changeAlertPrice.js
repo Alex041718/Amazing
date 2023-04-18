@@ -15,8 +15,7 @@ function changeAlertPrice(asin, newPrice) {
     fs.writeFileSync(filePathProducts, JSON.stringify(data, null, 4));
     
 }
-
-const asin ='B0935DN1BN';
-changeAlertPrice(asin, 1000);
-
 module.exports = changeAlertPrice;
+
+//const asin ='B0935DN1BN';
+//changeAlertPrice(asin, 1000);
