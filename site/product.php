@@ -105,6 +105,7 @@ titleElement.addEventListener('click', function() {
             <hr id="lineSeparator">
 
             <?php if($dataAPI['alreadySaved'] == 1) : ?>
+
             <p><?php echo $dataAPI['alertPrice'] ?></p>
             
             <form id="formPrice" action="changeAlertPrice.php" method="get">
@@ -114,6 +115,7 @@ titleElement.addEventListener('click', function() {
                 
                 <button type="submit" id="buttonSetPrice">Set alert</button>
             </form>
+            
             <?php endif; ?>
         </div>
 
