@@ -55,7 +55,7 @@ async function getListSearch(search,nbProduits) {
 module.exports = getListSearch;
 
 //const search= 'iphone';
-const search= 'cartable';
-const nbProduits = 8;
+//const search= 'cartable';
+//const nbProduits = 8;
 
-getListSearch(search,nbProduits).then((response) => { console.log(response) });
+//getListSearch(search,nbProduits).then((response) => { console.log(response) });

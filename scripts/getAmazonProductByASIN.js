@@ -126,7 +126,7 @@ async function getPrice(asin) {
 
 module.exports = getPrice;
 
-const ASIN = 'B09WJBD75X';
-(async () => {console.log(await getPrice(ASIN));})();
+//const ASIN = 'B09WJBD75X';
+//(async () => {console.log(await getPrice(ASIN));})();
 
 
