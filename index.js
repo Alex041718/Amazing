@@ -76,7 +76,7 @@ app.get('/products/getDataSearch', async function(req, res) {
     
 
     if (req.query.S && req.query.S != "" && req.query.nbProduits && req.query.nbProduits != "") {
-        getDataSearch(req.query.S,req.query.nbProduits).then((response) => {
+        getDataSearch(req.query.S,parseInt(req.query.nbProduits)).then((response) => {
             res.send(response);
         }).catch((error) => {
             res.status(404)
