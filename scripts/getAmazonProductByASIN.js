@@ -47,6 +47,8 @@ async function getPrice(asin) {
 
 
                         } else {
+
+                            
                             var res = {
                                 //ça c'est la disposition à chier
 
@@ -73,6 +75,8 @@ async function getPrice(asin) {
                         
 
                     } else {
+
+                        if (root.querySelector('#landingImage') != null) {
                         console.log('la disposition classique');
                         var res = {
                             //ça c'est la disposition html la plus classique
@@ -86,6 +90,24 @@ async function getPrice(asin) {
     
                             "timestamp": getTimeStamp(),
                         }
+
+                    } else {
+
+                        console.log('la disposition classique 2');
+                        console.log(asin);
+                        var res = {
+                            //ça c'est la disposition html la plus classique 2
+                            "name": root.querySelector('#productTitle').text.trim(),
+    
+                            "asin": asin,
+    
+                            "image": root.querySelector('#landingImage'),//pas d'image prblm frere
+    
+                            "price": parseInt(root.querySelector('#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay > span.a-offscreen').text.trim().split('€')[0].replace(/\s+/g, '').replace(',', '.')),
+    
+                            "timestamp": getTimeStamp(),
+                        }
+                    }
 
                     }
                     
@@ -104,7 +126,7 @@ async function getPrice(asin) {
 
 module.exports = getPrice;
 
-//const ASIN = 'B07TJKCCRJ';
-//(async () => {console.log(await getPrice(ASIN));})();
+const ASIN = 'B09WJBD75X';
+(async () => {console.log(await getPrice(ASIN));})();
 
 
