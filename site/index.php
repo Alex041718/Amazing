@@ -12,7 +12,7 @@
 <body>
 
 
-<?php if (empty($_GET)): ?> <!-- IF -->
+<?php if (empty($_GET) or (in_array('S', $_GET) and !in_array('nbProduits', $_GET)) or (!in_array('S', $_GET) and in_array('nbProduits', $_GET))): ?> <!-- IF -->
 
 
 <h1>Amazing</h1>
@@ -30,7 +30,7 @@
 
 
 
-<?php $search = $_GET['S']; ?>
+<?php $search = $_GET['S']; $nbProduits = $_GET['nbProduits'];?>
 
 <h1>Amazing</h1>
 <form id="searchForm" action='index.php' method='GET'>
@@ -42,7 +42,7 @@
 //echo $search;
 $searchEncode = urlencode($search);
 
-$url = "http://51.38.35.91:3000/products/getDataSearch?S={$searchEncode}";
+$url = "http://51.38.35.91:3000/products/getDataSearch?S={$searchEncode}&nbProduits={$nbProduits}";
 $curl = curl_init();
 
 curl_setopt_array($curl, array(

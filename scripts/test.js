@@ -4,7 +4,7 @@ const getData = require('./getDataByASINorNot.js');
 
 
 
-async function getListSearch(search,nbProduits) {
+async function getListSearch(search,nbProduit) {
 
     let config = {
         method: 'get',
@@ -52,6 +52,6 @@ module.exports = getListSearch;
 
 //const search= 'iphone';
 const search= 'airpods+max';
-const nbProduits = 8;
+const nbProduit = 8;
 
-getListSearch(search,nbProduits).then((response) => { console.log(response) });
+getListSearch(search,nbProduit).then((response) => { console.log(response) });
