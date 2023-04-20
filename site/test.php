@@ -1,1 +1,0 @@
-<?php echo gettype($_GET['asin']) ?>

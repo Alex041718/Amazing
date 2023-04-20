@@ -18,7 +18,17 @@
 <h1>Amazing</h1>
 
 <form id="searchForm" action='index.php' method='GET'>
-    <input id="searchInput" type="text" name="S">
+    <input id="searchInput" type="text" name="S" autofocus>
+    <select name="nbProduits" id="selectNbProduits">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option selected>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+    </select>
     <button type="submit">Search</button>
 </form>
 
@@ -35,6 +45,16 @@
 <h1>Amazing</h1>
 <form id="searchForm" action='index.php' method='GET'>
     <input id="searchInput" type="text" name="S" value="<?php echo $search ?>">
+    <select name="nbProduits" id="selectNbProduits">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option selected>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+    </select>
     <button type="submit">Search</button>
 </form>
 
@@ -70,6 +90,7 @@ $i = 0;
 
 <div id="productsContainer">
 
+<?php if ($data != null): ?>
 
 <?php foreach ($data as $item): ?>
     <?php $i++; ?>
@@ -105,7 +126,9 @@ else{echo "<i  class='fa-solid fa-check check' style='color: #00f900;'></i>";}
         </div>
     </div>
 <?php endforeach; ?>
-
+<?php else: ?>
+<h1>Erreur... Mince alors AHAH</h1> <!-- $data est null -->
+<?php endif; ?>
 </div>
 
 
