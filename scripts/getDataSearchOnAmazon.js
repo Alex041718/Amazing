@@ -23,7 +23,7 @@ async function getListSearch(search,nbProduits) {
                     var root = parse(response.data);
                     var res = [];
 
-                    for (let index = 7; index < nbProduit+8; index++) {
+                    for (let index = 7; index < nbProduits+8; index++) {
                         asin = root.querySelector(`#search > div.s-desktop-width-max.s-desktop-content.s-wide-grid-style-t3.s-opposite-dir.s-wide-grid-style.sg-row > div.sg-col-20-of-24.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span.rush-component.s-latency-cf-section > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(${index})`).getAttribute("data-asin");
 
                         if (asin != '') {
@@ -51,7 +51,7 @@ async function getListSearch(search,nbProduits) {
 module.exports = getListSearch;
 
 //const search= 'iphone';
-const search= 'airpods+max';
-const nbProduits = 8;
+//const search= 'airpods+max';
+//const nbProduits = 8;
 
-getListSearch(search,nbProduits).then((response) => { console.log(response) });
+//getListSearch(search,nbProduits).then((response) => { console.log(response) });
