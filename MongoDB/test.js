@@ -1,8 +1,16 @@
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://51.38.35.91:27017/Amazing";
+var url = "mongodb://localhost:27017/Amazing";
 
-MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  console.log("connected to db");
-  db.close();
+const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
+
+client.connect((err) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+
+  console.log('Connected successfully to server');
+
+  const db = client.db('Amazing');
+  // Votre code pour interagir avec la base de données ici
 });
