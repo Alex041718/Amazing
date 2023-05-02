@@ -12,60 +12,13 @@
 <body>
 
 
-<?php if (empty($_GET) or (in_array('S', $_GET) and !in_array('nbProduits', $_GET)) or (!in_array('S', $_GET) and in_array('nbProduits', $_GET))): ?> <!-- IF -->
-
-
-<h1>Amazing</h1>
-
-<form id="searchForm" action='index.php' method='GET'>
-    <input id="searchInput" type="text" name="S" autofocus>
-    <select name="nbProduits" id="selectNbProduits">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option selected>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-    </select>
-    <button type="submit">Search</button>
-</form>
-<a href="seeDataBase.php" style="">
-<button class="buttonAddProductBig" id="seeDataBase" > Voir les produits enregistrés</button>
-</a>
-<img id="gif" src="gif/cat.gif">
-
-
-
-
-<?php else: ?> <!-- ELSE -->
-
-
-
-<?php $search = $_GET['S']; $nbProduits = $_GET['nbProduits'];?>
-
-<h1>Amazing</h1>
-<form id="searchForm" action='index.php' method='GET'>
-    <input id="searchInput" type="text" name="S" value="<?php echo $search ?>">
-    <select name="nbProduits" id="selectNbProduits">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option selected>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-    </select>
-    <button type="submit">Search</button>
-</form>
+<h1>Les produits enregistrés</h1>
 
 <?php
 //echo $search;
-$searchEncode = urlencode($search);
 
-$url = "http://51.38.35.91:3000/products/getDataSearch?S={$searchEncode}&nbProduits={$nbProduits}";
+
+$url = "http://51.38.35.91:3000/products/";
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -88,6 +41,9 @@ $data = json_decode($response);
 //print_r($data);
 
 $i = 0;
+
+//echo $data;
+//print_r($data);
 
 ?>
 
@@ -114,18 +70,10 @@ if (titleElement<?php echo($i); ?>.textContent.length > limit<?php echo($i); ?>)
 
 </script>
 
-            <span class="price"><?php echo $item->price ?> €</span>
+            <span class="price"><?php echo end($item->data)->price ?> €</span>
             
 
-            <?php
-
-if($item->alreadySaved != 1){echo "<form action='addProduct.php?asin={$item->asin}&direction=searchPage&searchedword={$searchEncode}' id='formAddProduct' method='POST'>
-    
-    
-    <button class='buttonAddProductSmall' type='submit'>Add product <b>+</b> </button>
-    </form>";}
-else{echo "<i  class='fa-solid fa-check check' style='color: #00f900;'></i>";}
-?>
+            <i  class='fa-solid fa-check check' style='color: #00f900;'></i>
         </div>
     </div>
 <?php endforeach; ?>
@@ -134,9 +82,6 @@ else{echo "<i  class='fa-solid fa-check check' style='color: #00f900;'></i>";}
 <?php endif; ?>
 </div>
 
-
-
-<?php endif; ?>
 
 
 </body>
