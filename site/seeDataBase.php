@@ -74,6 +74,12 @@ if (titleElement<?php echo($i); ?>.textContent.length > limit<?php echo($i); ?>)
             
 
             <i  class='fa-solid fa-check check' style='color: #00f900;'></i>
+
+            <form action='deleteProduct.php?asin=<?php echo($item->asin) ?>' id='formdeleteProduct' method='POST'>
+
+                <button class='buttondeleteProductSmall' type='submit'>Supprimer </button>
+
+            </form>
         </div>
     </div>
 <?php endforeach; ?>
