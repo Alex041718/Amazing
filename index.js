@@ -15,6 +15,7 @@ const pushOneProduct = require('./scripts/pushOneProduct');
 //const pushProduct = require('./scripts/pushProduct');
 const getDataSearch = require('./scripts/getDataSearchOnAmazon');
 const changeAlertPrice = require('./scripts/changeAlertPrice');
+const deleteProduct = require('./scripts/deleteProduct');
 
 let app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -112,6 +113,19 @@ app.get('/products/changeAlertPrice', async function(req, res) {
         
         changeAlertPrice(req.query.ASIN, req.query.newPrice);
         res.send("Price changed");
+    } else {
+        res.send("No ASIN or no new price provided ");
+    }
+    
+});
+
+app.get('/products/deleteProduct', async function(req, res) {
+
+    
+    if (req.query.ASIN) {
+        
+        deleteProduct(req.query.ASIN);
+        res.send("Product deleted");
     } else {
         res.send("No ASIN or no new price provided ");
     }
